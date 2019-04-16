@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemySight : MonoBehaviour
 {
+	[SerializeField] private float m_halfConeSize = 45f;
+	
 	
 	public float FieldOfViewAngle = 110f;
 	public bool PlayerInSight;
@@ -27,7 +29,7 @@ public class EnemySight : MonoBehaviour
 	
 	void OnTriggerStay(Collider other) {
 		Debug.Log("collision");
-		if(other.gameObject == Player) {
+		/*if(other.gameObject == Player) {
 			PlayerInSight = false;
 			Debug.Log("Player");
 			Vector3 direction = other.transform.position - transform.position;
@@ -41,6 +43,39 @@ public class EnemySight : MonoBehaviour
 						Debug.Log("Player in view");
 					}
 				}
+			}
+		}*/
+		
+		Vector3 myPos = transform.position;
+		Vector3 myVector = transform.forward;
+		Vector3 theirPos = other.transform.position;
+		Vector3 theirVector = theirPos - myPos;
+		
+		float mag = Vector3.SqrMagnitude(myVector) * Vector3.SqrMagnitude(theirVector);
+		
+		if (mag == 0f) {
+			return;
+		}
+		
+		float dotProd = Vector3.Dot(myVector, theirPos - myPos);
+		bool isNegative = dotProd < 0f;
+		dotProd = dotProd * dotProd;
+		if(isNegative) {
+			dotProd *= -1;
+		}
+		
+		float sqrAngle = Mathf.Rad2Deg * Mathf.Acos(dotProd/mag);
+		bool isInFront = sqrAngle < m_halfConeSize;
+		if (other.gameObject.name == "Player") {
+			print(sqrAngle + " " + other.gameObject.name);
+		}
+		
+		Debug.DrawLine(myPos, theirPos, isInFront ? Color.green : Color.red);
+		
+		if (isInFront) {
+			int mask = 1 << LayerMask.NameToLayer("Env");
+			if (!Physics.Linecast(myPos, theirPos, mask)) {
+				print("sensing something " + other.gameObject.name);
 			}
 		}
 	}
