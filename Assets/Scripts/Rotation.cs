@@ -4,54 +4,51 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-	[SerializeField] private float angle;
-	//private float timer = 5f;
-	//private float reset;
-	//private bool pause = false; 
-	
+	[SerializeField] private float angle = 1.0f;
+	[SerializeField] private float slowness = 1.0f;
+	[SerializeField] private float delay = 1.0f;
 
-
-    void Awake()
+	[SerializeField] private bool clockwise = true;
+	// Use this for initialization
+	void Start()
 	{
-		//reset = timer;
-		
-		
+		StartCoroutine(RotateObject(angle, Vector3.up, slowness));
 	}
 
-	// Start is called before the first frame update
-    void Start()
-    {
-		
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-		Vector3 initialState = this.transform.eulerAngles;
-		Vector3 targetState = new Vector3(initialState.x, initialState.y + angle, initialState.z);
-		//transform.rotation; 
-		Vector3 currentState = Vector3.Lerp(initialState, targetState, 0.05f);	
-		
-    }
-	void Rotate()
+	IEnumerator RotateObject(float angle, Vector3 axis, float inTime)
 	{
-		//pause = true;
-		//timer = reset;
-		transform.Rotate(Vector3.up);
+		// calculate rotation speed
+		float rotationSpeed = angle / inTime;
+
+		
+		while (true)
+		{
+			// save starting rotation position
+			Quaternion startRotation = transform.rotation;
+
+			float deltaAngle = 0;
+
+			// rotate until reaching angle
+			while (deltaAngle < angle)
+			{
+				deltaAngle += rotationSpeed * Time.deltaTime;
+				deltaAngle = Mathf.Min(deltaAngle, angle);
+
+				if (clockwise)
+				{
+					transform.rotation = startRotation * Quaternion.AngleAxis(deltaAngle, axis);
+				}
+				else
+				{
+					transform.rotation = startRotation * Quaternion.AngleAxis(-deltaAngle, axis);
+				}
+					
+
+				yield return null;
+			}
+
+			// delay here
+			yield return new WaitForSeconds(delay);
+		}
 	}
 }
-
-/*
- 
-	 print(timer);
-		timer -= Time.deltaTime;
-
-		if (timer > 0 && !pause)
-			Rotate();
-		else
-		{
-			pause = true;
-			timer = reset;
-		}
-	 
-	 */
