@@ -18,8 +18,18 @@ public class Movement : MonoBehaviour
 
     void Update()//FixedUpdate
     {
-        heading += Input.GetAxis("Mouse X") * Time.deltaTime*45;
-        camPivot.rotation = Quaternion.Euler(0, heading, 0);
+        if(Input.GetKey(KeyCode.Q))
+        {
+            heading++;
+            camPivot.rotation = Quaternion.Euler(0, heading, 0);
+        }
+        if(Input.GetKey(KeyCode.E))
+        {
+            heading--;
+            camPivot.rotation = Quaternion.Euler(0, heading, 0);
+        }
+        //heading += Input.GetAxis("Mouse X") * Time.deltaTime*45;
+        //camPivot.rotation = Quaternion.Euler(0, heading, 0);
 
         input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         input = Vector2.ClampMagnitude(input, 1);
