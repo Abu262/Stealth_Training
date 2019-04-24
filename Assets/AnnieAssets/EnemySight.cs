@@ -4,47 +4,37 @@ using UnityEngine;
 
 public class EnemySight : MonoBehaviour
 {
-	[SerializeField] private float m_halfConeSize = 45f;
-	
-	
+	public float HalfConeSize = 75f;	
 	public float FieldOfViewAngle = 110f;
-	public bool PlayerInSight;
 	public float AdjustRaycastHeight = 1f;
-	//public Vector3 PlayerLastSighting;
-	
+	public float SphereRadius = 10f;
+	public SphereCollider col;
 	private GameObject Player;
-	private SphereCollider col;
-    // Start is called before the first frame update
+	public bool PlayerInSight;
+
+	
+	private float actualAngle;
+	
     void Start()
     {
         Player = GameObject.FindGameObjectsWithTag("Player")[0];
 		col = GetComponent<SphereCollider>();
+		SphereRadius = col.radius;
+		
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //adjust SphereCollider with SphereRadius
+		col.radius = SphereRadius;
     }
 	
+
+	
 	void OnTriggerStay(Collider other) {
-		Debug.Log("collision");
-		/*if(other.gameObject == Player) {
-			PlayerInSight = false;
-			Debug.Log("Player");
-			Vector3 direction = other.transform.position - transform.position;
-			float angle = Vector3.Angle(direction, transform.forward);
-			
-			if (angle < FieldOfViewAngle * 0.5f) {
-				RaycastHit hit;
-				if (Physics.Raycast(transform.position + (transform.up*AdjustRaycastHeight), direction.normalized, out hit, col.radius)) {
-					if (hit.collider.gameObject == Player) {
-						PlayerInSight = true;
-						Debug.Log("Player in view");
-					}
-				}
-			}
-		}*/
 		
 		Vector3 myPos = transform.position;
 		Vector3 myVector = transform.forward;
@@ -65,18 +55,29 @@ public class EnemySight : MonoBehaviour
 		}
 		
 		float sqrAngle = Mathf.Rad2Deg * Mathf.Acos(dotProd/mag);
-		bool isInFront = sqrAngle < m_halfConeSize;
+		bool isInFront = sqrAngle < HalfConeSize;
 		if (other.gameObject.name == "Player") {
 			print(sqrAngle + " " + other.gameObject.name);
 		}
 		
 		Debug.DrawLine(myPos, theirPos, isInFront ? Color.green : Color.red);
 		
-		if (isInFront) {
-			int mask = 1 << LayerMask.NameToLayer("Env");
-			if (!Physics.Linecast(myPos, theirPos, mask)) {
-				print("sensing something " + other.gameObject.name);
-			}
-		}
+	}
+	
+
+	public void setColliderRadius(float newRadius) {
+		SphereRadius = newRadius;
+	}
+	
+	public void setConeSize(float newConeSize) {
+		HalfConeSize = newConeSize;
+	}
+	
+	public void setFieldOfViewAngle(float newAngle) {
+		FieldOfViewAngle = newAngle;
+	}
+	
+	public void setRaycastHeight(float newHeight) {
+		AdjustRaycastHeight = newHeight;
 	}
 }
