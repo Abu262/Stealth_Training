@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    //private Rigidbody rb;
+    private Rigidbody rb;
     public Transform camPivot;
     float heading = 0;
     public Transform cam;
@@ -13,18 +13,28 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-        //rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()//FixedUpdate
     {
-        heading += Input.GetAxis("Mouse X") * Time.deltaTime*45;
-        camPivot.rotation = Quaternion.Euler(0, heading, 0);
+        if(Input.GetKey(KeyCode.Q))
+        {
+            heading++;
+            camPivot.rotation = Quaternion.Euler(0, heading, 0);
+        }
+        if(Input.GetKey(KeyCode.E))
+        {
+            heading--;
+            camPivot.rotation = Quaternion.Euler(0, heading, 0);
+        }
+        /*MOVE VIA MOUSE*/
+        //heading += Input.GetAxis("Mouse X") * Time.deltaTime*45;
+        //camPivot.rotation = Quaternion.Euler(0, heading, 0);
 
         input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         input = Vector2.ClampMagnitude(input, 1);
-
-        ///transform.position += new Vector3(input.x, 0, input.y) * Time.deltaTime * 5;
+        
         Vector3 camF = cam.forward;
         Vector3 camR = cam.right;
 
@@ -35,11 +45,10 @@ public class Movement : MonoBehaviour
 
         transform.position += (camF * input.y + camR * input.x) * Time.deltaTime * 5;
 
-        /*float moveHorizontal = Input.GetAxis("Horizontal") * 20;
-        float moveVertical = Input.GetAxis("Vertical") * 20;
+        if (transform.position.y < -1)
+            print("Game Over");
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f,moveVertical);
-
-        rb.AddForce(movement);*/
+        //if (rb.velocity.y < -0.1)
+        //    print("Game Over");
     }
 }
