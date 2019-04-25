@@ -1076,5 +1076,15 @@ PrefabInstance:
       propertyPath: fieldDepth
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 176588625447023273, guid: c66e9ded468f0ee4c93612fb86526119,
+        type: 3}
+      propertyPath: raysToCast
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 176588625447023273, guid: c66e9ded468f0ee4c93612fb86526119,
+        type: 3}
+      propertyPath: sightRange
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c66e9ded468f0ee4c93612fb86526119, type: 3}
