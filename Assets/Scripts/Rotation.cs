@@ -7,7 +7,7 @@ public class Rotation : MonoBehaviour
 	[SerializeField] private float angle = 1.0f;
 	[SerializeField] private float slowness = 1.0f;
 	[SerializeField] private float delay = 1.0f;
-	[SerializeField] private float m_frequency = 1.0f;
+
 
 	[SerializeField] private bool doesLoop = false;
 	[SerializeField] private bool clockwise = true;
