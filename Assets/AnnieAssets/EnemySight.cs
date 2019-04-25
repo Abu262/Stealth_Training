@@ -55,7 +55,7 @@ public class EnemySight : MonoBehaviour
 		}
 		
 		float sqrAngle = Mathf.Rad2Deg * Mathf.Acos(dotProd/mag);
-		bool isInFront = sqrAngle < HalfConeSize;
+		bool isInFront = sqrAngle/2 < HalfConeSize;
 		if (other.gameObject.name == "Player" && isInFront) {
 			print(sqrAngle + " " + other.gameObject.name);
 			
