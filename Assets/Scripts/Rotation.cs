@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Rotation : MonoBehaviour
-{
+{//transform.Right
 	[SerializeField] private float angle = 1.0f;
 	[SerializeField] private float slowness = 1.0f;
 	[SerializeField] private float delay = 1.0f;
+	[SerializeField] private float m_frequency = 1.0f;
 
+	[SerializeField] private bool doesLoop = false;
 	[SerializeField] private bool clockwise = true;
+
+	
 	// Use this for initialization
 	void Start()
 	{
@@ -34,17 +38,39 @@ public class Rotation : MonoBehaviour
 				deltaAngle += rotationSpeed * Time.deltaTime;
 				deltaAngle = Mathf.Min(deltaAngle, angle);
 
-				if (clockwise)
-				{
-					transform.rotation = startRotation * Quaternion.AngleAxis(deltaAngle, axis);
-				}
-				else
-				{
-					transform.rotation = startRotation * Quaternion.AngleAxis(-deltaAngle, axis);
-				}
-					
-
+				
+					if (clockwise)
+					{
+						transform.rotation = startRotation * Quaternion.AngleAxis(deltaAngle, axis);
+					}
+					else
+					{
+						transform.rotation = startRotation * Quaternion.AngleAxis(-deltaAngle, axis);
+					}
+				
+				
 				yield return null;
+			}
+			if(doesLoop)
+			{
+				while(deltaAngle > 0)
+				{
+					deltaAngle -= rotationSpeed * Time.deltaTime;
+					deltaAngle = Mathf.Min(deltaAngle, angle);
+
+
+					if (clockwise)
+					{
+						transform.rotation = startRotation * Quaternion.AngleAxis(deltaAngle, axis);
+					}
+					else
+					{
+						transform.rotation = startRotation * Quaternion.AngleAxis(-deltaAngle, axis);
+					}
+
+
+					yield return null;
+				}
 			}
 
 			// delay here

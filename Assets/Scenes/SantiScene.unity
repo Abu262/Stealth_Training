@@ -301,6 +301,8 @@ MonoBehaviour:
   angle: 180
   slowness: 0.5
   delay: 0.5
+  m_frequency: 0.5
+  doesLoop: 1
   clockwise: 0
 --- !u!1 &1774163224
 GameObject:
