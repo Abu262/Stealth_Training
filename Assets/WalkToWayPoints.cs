@@ -41,7 +41,7 @@ public class WalkToWayPoints : MonoBehaviour
         // move towards the target
         transform.position = Vector3.MoveTowards(transform.position, targetWayPoint.position, speed * Time.deltaTime);
 
-        if (transform.position == targetWayPoint.position)
+        if (transform.position.x == targetWayPoint.position.x)
         {
             currentWayPoint++;
             if (currentWayPoint == this.wayPointList.Length)

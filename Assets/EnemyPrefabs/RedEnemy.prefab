@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2556237865466114338}
   - component: {fileID: 2556237865466114337}
   - component: {fileID: 2556237865466114336}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 2556237865781439965}
   - component: {fileID: 2556237865781439964}
   - component: {fileID: 2556237865781439963}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 2556237866661770742}
   - component: {fileID: 2556237866661770741}
   - component: {fileID: 2556237866661770740}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 2556237866751656164}
   - component: {fileID: 2556237866751656163}
   - component: {fileID: 2556237866751656162}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 2556237866805788086}
   - component: {fileID: 2556237866805788085}
   - component: {fileID: 2556237866805788084}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 2556237866968365639}
   - component: {fileID: 2556237866968365638}
   - component: {fileID: 2556237866968365637}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 2556237866988517176}
   - component: {fileID: 2556237866988517319}
   - component: {fileID: 2556237866988517179}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 2556237866996391604}
   - component: {fileID: 2556237866996391603}
   - component: {fileID: 2556237866996391602}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -779,7 +779,7 @@ GameObject:
   - component: {fileID: 2556237867240127855}
   - component: {fileID: 2556237867240127854}
   - component: {fileID: 2556237867240127853}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -867,8 +867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6514818159333325028}
-  - component: {fileID: 3860812539344672947}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RedEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -898,15 +897,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3860812539344672947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6162381310024956138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bc1ab0d649dc0c46a50b6da9f3535c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
