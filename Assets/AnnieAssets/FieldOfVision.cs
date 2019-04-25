@@ -4,7 +4,7 @@ using System.Collections;
 public class FieldOfVision : MonoBehaviour {
 
 	public int 			raysToCast;
-	public int 			sightRange;
+	public float		sightRange;
 	public float 		angleOfVision; // in radians
 
 	public Vector3[] 	vertices;
@@ -104,4 +104,17 @@ public class FieldOfVision : MonoBehaviour {
 		//visionConeMesh.RecalculateNormals (); // not sure if this is necessary anymore
 
 	} // end RaySweep
+	
+	public void setRaysToCast(int raysNum) {
+		raysToCast = raysNum;
+	}
+	
+	public void setSightRange(float newSightRange) {
+		sightRange = newSightRange;
+	}
+	
+	public void setAngle(float newAngle) {
+		angleOfVision = newAngle;
+	}
+	
 }

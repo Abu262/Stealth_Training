@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySight : MonoBehaviour
 {
 	public float HalfConeSize = 75f;	
-	public float FieldOfViewAngle = 110f;
+	//public float FieldOfViewAngle = 110f;
 	public float AdjustRaycastHeight = 1f;
 	public float SphereRadius = 10f;
 	public SphereCollider col;
@@ -72,11 +72,11 @@ public class EnemySight : MonoBehaviour
 	public void setConeSize(float newConeSize) {
 		HalfConeSize = newConeSize;
 	}
-	
+	/*
 	public void setFieldOfViewAngle(float newAngle) {
 		FieldOfViewAngle = newAngle;
 	}
-	
+	*/
 	public void setRaycastHeight(float newHeight) {
 		AdjustRaycastHeight = newHeight;
 	}
