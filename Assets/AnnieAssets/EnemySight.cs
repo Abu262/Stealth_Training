@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemySight : MonoBehaviour
 {
-	public float HalfConeSize = 75f;	
+	private float HalfConeSize = 30f;	
 	//public float FieldOfViewAngle = 110f;
-	public float AdjustRaycastHeight = 1f;
-	public float SphereRadius = 10f;
+	private float AdjustRaycastHeight = 1f;
+	private float SphereRadius = 5f;
 	public SphereCollider col;
 	private GameObject Player;
 	public bool PlayerInSight;
@@ -19,8 +20,7 @@ public class EnemySight : MonoBehaviour
     {
         Player = GameObject.FindGameObjectsWithTag("Player")[0];
 		col = GetComponent<SphereCollider>();
-		SphereRadius = col.radius;
-		
+		//SphereRadius = col.radius;
 
 
     }
@@ -58,6 +58,11 @@ public class EnemySight : MonoBehaviour
 		bool isInFront = sqrAngle < HalfConeSize;
 		if (other.gameObject.name == "Player") {
 			print(sqrAngle + " " + other.gameObject.name);
+			
+			////////////////////////////////// DO EVERYTHING FOR HIT HERE
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+
 		}
 		
 		Debug.DrawLine(myPos, theirPos, isInFront ? Color.green : Color.red);
@@ -67,6 +72,7 @@ public class EnemySight : MonoBehaviour
 
 	public void setColliderRadius(float newRadius) {
 		SphereRadius = newRadius;
+		col.radius = SphereRadius;
 	}
 	
 	public void setConeSize(float newConeSize) {

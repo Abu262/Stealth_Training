@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 public class FieldOfVisionSetup : MonoBehaviour {
 
-	public float fieldViewAngle; // in degrees \/
-	public float fieldDepth; //radius of the collider
-	public int raysInCast; //appearance of fieldView
-	public float enemyEyeHeight;
+	public float fieldViewAngle = 60f; // in degrees \/
+	public float fieldDepth = 10f; //radius of the collider
+	public int raysInCast = 100; //appearance of fieldView
+	public float enemyEyeHeight = 1f;
 
 	private EnemySight enemySight;
 	private FieldOfVision fieldOfVision;
@@ -21,9 +21,10 @@ public class FieldOfVisionSetup : MonoBehaviour {
 		enemySight.setConeSize(fieldViewAngle/2); //degrees
 		fieldOfVision.setAngle(fieldViewAngle*Mathf.Deg2Rad/2); //in radians
 		
-		//set radius
+		//set radius - need to adjust for weird scaling
 		enemySight.setColliderRadius(fieldDepth);
-		fieldOfVision.setSightRange(fieldDepth);
+		fieldOfVision.setSightRange(fieldDepth/5);
+		
 		
 		//set the raycast height
 		enemySight.setRaycastHeight(enemyEyeHeight);

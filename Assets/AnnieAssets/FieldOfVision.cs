@@ -3,11 +3,11 @@ using System.Collections;
 
 public class FieldOfVision : MonoBehaviour {
 
-	public int 			raysToCast;
-	public float		sightRange;
-	public float 		angleOfVision; // in radians
+	public int 			raysToCast = 40;
+	public float		sightRange = 5f;
+	private float 		angleOfVision = 60f; // in radians
 
-	public Vector3[] 	vertices;
+	public Vector3[] 	vertices; //why is this one overflowing
 	private Vector2[] 	uvs;
 	public int[] 		triangles;
 
