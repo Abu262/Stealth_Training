@@ -42,8 +42,9 @@ public class Movement : MonoBehaviour
         camR.y = 0;
         camF = camF.normalized;
         camR = camR.normalized;
-
-        transform.position += (camF * input.y + camR * input.x) * Time.deltaTime * 5;
+        rb.MovePosition(transform.position + (camF * input.y + camR * input.x) * Time.deltaTime * 5);
+        //transform.position += (camF * input.y + camR * input.x) * Time.deltaTime * 5;
+       // cam.position = (Quaternion.Euler(30, 45, 0) * Vector3.forward);
 
         if (transform.position.y < -1)
             print("Game Over");

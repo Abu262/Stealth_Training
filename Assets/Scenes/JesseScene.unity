@@ -132,14 +132,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85995589}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b82b9ed51e115a438557b74e1860373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1583860911}
+  - {fileID: 856701483}
 --- !u!1 &121640382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,6 +1078,31 @@ PrefabInstance:
         type: 3}
       propertyPath: meshResolution
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078472028836989550, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_AgentTypeID
+      value: -1372625422
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_BaseOffset
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 720
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25af2deeb45a14145b89abdef62ec5f5, type: 3}
