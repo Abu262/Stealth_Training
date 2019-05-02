@@ -17,7 +17,7 @@ public class JumpPad : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        Debug.Log("Entered");
+        //Debug.Log("Entered");
         col.GetComponent<Rigidbody>().AddForce(0,2000,0);
     }
 }
