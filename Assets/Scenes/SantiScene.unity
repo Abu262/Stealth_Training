@@ -298,11 +298,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd2786a052b5504cb639f2f60fac554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: 180
-  slowness: 0.5
+  angle: 45
+  slowness: 1
   delay: 0.5
-  m_frequency: 0.5
-  doesLoop: 1
+  doesLoop: 0
   clockwise: 0
 --- !u!1 &1774163224
 GameObject:
