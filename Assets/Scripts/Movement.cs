@@ -21,12 +21,12 @@ public class Movement : MonoBehaviour
         if(Input.GetKey(KeyCode.Q))
         {
             heading++;
-            camPivot.rotation = Quaternion.Euler(0, heading, 0);
+            camPivot.rotation = Quaternion.Euler(0, heading+1, 0);
         }
         if(Input.GetKey(KeyCode.E))
         {
             heading--;
-            camPivot.rotation = Quaternion.Euler(0, heading, 0);
+            camPivot.rotation = Quaternion.Euler(0, heading+1, 0);
         }
         /*MOVE VIA MOUSE*/
         //heading += Input.GetAxis("Mouse X") * Time.deltaTime*45;
