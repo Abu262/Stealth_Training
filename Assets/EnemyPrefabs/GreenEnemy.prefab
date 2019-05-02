@@ -87,7 +87,7 @@ BoxCollider:
   m_GameObject: {fileID: 3255240382517797710}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -179,7 +179,7 @@ BoxCollider:
   m_GameObject: {fileID: 3255240382530154188}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -308,7 +308,7 @@ BoxCollider:
   m_GameObject: {fileID: 3255240382540089275}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -399,7 +399,7 @@ BoxCollider:
   m_GameObject: {fileID: 3255240382782907494}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -490,7 +490,7 @@ BoxCollider:
   m_GameObject: {fileID: 3255240383410547961}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -581,7 +581,7 @@ BoxCollider:
   m_GameObject: {fileID: 3255240383418574009}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -672,7 +672,7 @@ BoxCollider:
   m_GameObject: {fileID: 3255240383505193451}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -763,7 +763,7 @@ BoxCollider:
   m_GameObject: {fileID: 3255240384237103141}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -854,7 +854,7 @@ BoxCollider:
   m_GameObject: {fileID: 3255240384543585488}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -949,6 +949,8 @@ GameObject:
   - component: {fileID: 6532136692665232962}
   - component: {fileID: 2141165877}
   - component: {fileID: 2141165882}
+  - component: {fileID: 6892239825701858813}
+  - component: {fileID: 5613286705486540706}
   m_Layer: 11
   m_Name: GreenEnemy
   m_TagString: Untagged
@@ -1079,3 +1081,28 @@ MonoBehaviour:
   edgeResolveIterations: 4
   edgeDstThreshold: 2
   viewMeshFilter: {fileID: 4034889636849647184}
+--- !u!114 &6892239825701858813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615882465351098848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e916420e1f9d6474f90c4984a45e5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &5613286705486540706
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615882465351098848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1343203, y: 1.0946, z: 1.1438833}
+  m_Center: {x: 0.008665293, y: 0.01576674, z: -0.0017469525}
