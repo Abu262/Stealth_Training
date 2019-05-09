@@ -23,7 +23,7 @@ public class FieldOfVisionSetup : MonoBehaviour {
 		fieldOfVision.setAngle(fieldViewAngle*Mathf.Deg2Rad/2); //in radians
 		
 		//set radius - need to adjust for weird scaling
-		Debug.Log(enemyFront.transform.localScale.x);
+		//Debug.Log(enemyFront.transform.localScale.x);
 		enemySight.setColliderRadius(fieldDepth);
 		fieldOfVision.setSightRange(fieldDepth/(1/enemyFront.transform.localScale.x));
 		
