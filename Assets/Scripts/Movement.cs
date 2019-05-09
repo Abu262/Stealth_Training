@@ -8,14 +8,23 @@ public class Movement : MonoBehaviour
     public Transform camPivot;
     float heading = 0;
     public Transform cam;
+
     private Vector3 offset; //c
     public float turnSpeed = 4.0f; //c
     Vector2 input;
+    Transform camTransform;
+    Transform playerTransform;
+    void Awake()
+    {
+        camTransform = cam.GetComponent<Transform>();
+        playerTransform = GetComponent<Transform>();
+    }  
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        offset = new Vector3(transform.position.x - 26.0f, transform.position.y + 25.0f, transform.position.z - 33.0f); //c
+        offset = new Vector3(playerTransform.position.x - 26.0f, playerTransform.position.y + 25.0f, playerTransform.position.z - 33.0f); //c
     }
 
     void Update()//FixedUpdate
@@ -42,9 +51,9 @@ public class Movement : MonoBehaviour
         camR.y = 0;
         camF = camF.normalized;
         camR = camR.normalized;
-        rb.MovePosition(transform.position + (camF * input.y + camR * input.x) * Time.deltaTime * 5);
-        cam.transform.position = transform.position + offset; //c
-        cam.transform.LookAt(transform.position);//c
+        rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * 5);
+        camTransform.position = playerTransform.position + offset; //c
+        camTransform.LookAt(playerTransform.position);//c
         //transform.position += (camF * input.y + camR * input.x) * Time.deltaTime * 5;
         // cam.position = (Quaternion.Euler(30, 45, 0) * Vector3.forward);
 

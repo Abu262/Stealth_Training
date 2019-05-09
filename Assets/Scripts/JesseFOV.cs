@@ -13,7 +13,7 @@ public class JesseFOV : MonoBehaviour
     public LayerMask obstacleMask;
   
     [HideInInspector]
-    public List<Transform> visibleTargets = new List<Transform>();
+    public List<Transform> visibleTargets = new List<Transform>();  
 
     public float meshResolution;
     public int edgeResolveIterations;
@@ -21,10 +21,10 @@ public class JesseFOV : MonoBehaviour
 
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
-    public AudioSource plonkreverb;
+   // public AudioSource plonkreverb;
     void Start()
     {
-        DontDestroyOnLoad(plonkreverb.gameObject);
+       // DontDestroyOnLoad(plonkreverb.gameObject);
         viewMesh = new Mesh();
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
@@ -61,7 +61,7 @@ public class JesseFOV : MonoBehaviour
                 float dstToTarget = Vector3.Distance(transform.position, target.position);
                 if (!Physics.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask))
                 {
-                    plonkreverb.Play();
+                   // plonkreverb.Play();
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                     visibleTargets.Add(target);
                 }
