@@ -48,7 +48,8 @@ public class PressureEvent : MonoBehaviour
 			
 			if(enemiesConverted && !enemiesMoving) {
 				for(int i = 0; i < wallEnemies.Count; i++) {
-					transformedEnemies[i].GetComponent<FollowPlayer>().enabled = true;	
+					//transformedEnemies[i].GetComponent<FollowPlayer>().enabled = true;
+					transformedEnemies[i].GetComponent<FollowPlayer>().StartChasing();					
 				}
 			}
 			enemiesConverted = true;	
@@ -70,7 +71,8 @@ public class PressureEvent : MonoBehaviour
 			if(enemiesConverted && enemiesMoving) {
 				for(int i = 0; i < transformedEnemies.Count; i++) {
 					Debug.Log(i);
-					transformedEnemies[i].GetComponent<FollowPlayer>().enabled = false;					
+					transformedEnemies[i].GetComponent<FollowPlayer>().StopChasing();
+					//transformedEnemies[i].GetComponent<FollowPlayer>().enabled = false;					
 				}
 				enemiesMoving = false;
 			}

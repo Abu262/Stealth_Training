@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 4364683066953611441}
   - component: {fileID: 6361615451454002366}
   - component: {fileID: 1328704346455312479}
+  - component: {fileID: 8151504242459821859}
   - component: {fileID: 3087118536937061555}
   m_Layer: 11
   m_Name: ChaserEnemy
@@ -181,7 +182,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: -1372625422
   m_Radius: 0.5
-  m_Speed: 5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 360
@@ -206,6 +207,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1343203, y: 1.0946, z: 1.1438833}
   m_Center: {x: 0.008665293, y: 0.01576674, z: -0.0017469525}
+--- !u!114 &8151504242459821859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415842311864090465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e916420e1f9d6474f90c4984a45e5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3087118536937061555
 MonoBehaviour:
   m_ObjectHideFlags: 0
