@@ -151,6 +151,7 @@ MonoBehaviour:
   edgeResolveIterations: 4
   edgeDstThreshold: 0.5
   viewMeshFilter: {fileID: 1549866277684268195}
+  plonkreverb: {fileID: 0}
 --- !u!114 &798772639730716673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +201,7 @@ GameObject:
   - component: {fileID: 1948775993366427124}
   - component: {fileID: 1549866277684268195}
   - component: {fileID: 301027660297826714}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ViewVisualization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
