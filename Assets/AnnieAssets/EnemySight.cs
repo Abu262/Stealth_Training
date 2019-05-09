@@ -30,6 +30,7 @@ public class EnemySight : MonoBehaviour
     {
         //adjust SphereCollider with SphereRadius
 		col.radius = SphereRadius;
+		
     }
 	
 
@@ -40,6 +41,7 @@ public class EnemySight : MonoBehaviour
 		Vector3 myVector = transform.forward;
 		Vector3 theirPos = other.transform.position;
 		Vector3 theirVector = theirPos - myPos;
+
 		
 		float mag = Vector3.SqrMagnitude(myVector) * Vector3.SqrMagnitude(theirVector);
 		
@@ -55,12 +57,23 @@ public class EnemySight : MonoBehaviour
 		}
 		
 		float sqrAngle = Mathf.Rad2Deg * Mathf.Acos(dotProd/mag);
-		bool isInFront = sqrAngle < HalfConeSize;
-		if (other.gameObject.name == "Player") {
+		bool isInFront = sqrAngle/2 < HalfConeSize;
+
+		if (other.gameObject.name == "Player" && isInFront) {
 			print(sqrAngle + " " + other.gameObject.name);
 			
-			////////////////////////////////// DO EVERYTHING FOR HIT HERE
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			Vector3 direction = (Player.transform.position - transform.position).normalized;
+			Ray ray = new Ray(transform.position, direction);
+			RaycastHit hit;
+			if(Physics.Raycast(ray, out hit)) {
+				if (hit.collider.tag == "Player") {
+					////////////////////////////////// DO EVERYTHING FOR HIT HERE
+					SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+				}
+			}
+			
+			
+			
 			//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
 
 		}
