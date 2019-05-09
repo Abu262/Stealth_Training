@@ -519,7 +519,7 @@ MonoBehaviour:
   turns: 5
   doesLoop: 0
   clockwise: 1
-  target_obj: {fileID: 541936779}
+  target: {fileID: 541936773}
 --- !u!65 &2094443425
 BoxCollider:
   m_ObjectHideFlags: 0

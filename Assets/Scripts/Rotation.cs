@@ -16,17 +16,19 @@ public class Rotation : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		StartCoroutine(RotateObject(angle, Vector3.up, slowness, turns));
+		StartCoroutine(RotateObject(angle, Vector3.up, slowness,this.delay, turns, this.doesLoop, this.clockwise));
 	}
 
-	public IEnumerator RotateObject(float angle, Vector3 axis, float inTime, int turns)
+	public IEnumerator RotateObject(float angle, Vector3 axis, float inTime,float delay, int turns, bool doesLoop, bool clockwise)
 	{
+
 		// calculate rotation speed
 		float rotationSpeed = angle / inTime;
 
 		
 		while (turns > 0)
 		{
+			
 			// save starting rotation position
 			Quaternion startRotation = transform.rotation;
 
@@ -35,6 +37,7 @@ public class Rotation : MonoBehaviour
 			// rotate until reaching angle
 			while (deltaAngle < angle)
 			{
+			
 				deltaAngle += rotationSpeed * Time.deltaTime;
 				deltaAngle = Mathf.Min(deltaAngle, angle);
 
