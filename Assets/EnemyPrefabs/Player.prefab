@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPivot: {fileID: 0}
   cam: {fileID: 0}
+  turnSpeed: 3
 --- !u!114 &1120503542464094266
 MonoBehaviour:
   m_ObjectHideFlags: 0

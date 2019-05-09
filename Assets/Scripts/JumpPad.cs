@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class JumpPad : MonoBehaviour
 {
+    public AudioSource js;
+    public float JumpForce = 2000f;
     void Start()
     {
 
@@ -15,9 +17,16 @@ public class JumpPad : MonoBehaviour
         
     }
 
+
+
     void OnTriggerEnter(Collider col)
     {
         //Debug.Log("Entered");
-        col.GetComponent<Rigidbody>().AddForce(0,2000,0);
+        if (col.gameObject.tag == "Player")
+        {
+            js.Play();
+            col.GetComponent<Rigidbody>().AddForce(0, JumpForce, 0);
+        }
+
     }
 }

@@ -869,7 +869,7 @@ GameObject:
   - component: {fileID: 6338275329444684145}
   - component: {fileID: 4034889636849647184}
   - component: {fileID: 6907433574438713118}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ViewVisualization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1081,6 +1081,7 @@ MonoBehaviour:
   edgeResolveIterations: 4
   edgeDstThreshold: 2
   viewMeshFilter: {fileID: 4034889636849647184}
+  plonkreverb: {fileID: 0}
 --- !u!114 &6892239825701858813
 MonoBehaviour:
   m_ObjectHideFlags: 0
