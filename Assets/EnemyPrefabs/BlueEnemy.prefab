@@ -151,7 +151,6 @@ MonoBehaviour:
   edgeResolveIterations: 4
   edgeDstThreshold: 0.5
   viewMeshFilter: {fileID: 1549866277684268195}
-  plonkreverb: {fileID: 0}
 --- !u!114 &798772639730716673
 MonoBehaviour:
   m_ObjectHideFlags: 0

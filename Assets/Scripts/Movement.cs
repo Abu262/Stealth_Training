@@ -51,7 +51,7 @@ public class Movement : MonoBehaviour
         camR.y = 0;
         camF = camF.normalized;
         camR = camR.normalized;
-        rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * 5);
+        rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * 20);// 5);
         camTransform.position = playerTransform.position + offset; //c
         camTransform.LookAt(playerTransform.position);//c
         //transform.position += (camF * input.y + camR * input.x) * Time.deltaTime * 5;
