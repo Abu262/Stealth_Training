@@ -61,7 +61,10 @@ public class JesseFOV : MonoBehaviour
                 float dstToTarget = Vector3.Distance(transform.position, target.position);
                 if (!Physics.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask))
                 {
-                   // plonkreverb.Play();
+                    // plonkreverb.Play();
+                    AudioManager.instance.sounds[1].source.volume = 0f;
+                    AudioManager.instance.sounds[1].loop = false;
+                    AudioManager.instance.Play("PlayerCaught");
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                     visibleTargets.Add(target);
                 }

@@ -38,8 +38,11 @@ public class FixView : MonoBehaviour
     if(hits.Length > 0){
       foreach(RaycastHit hit in hits){
         if(hit.collider.gameObject.transform != WatchTarget && hit.collider.transform.root != WatchTarget){
-          _LastTransforms.Add(hit.collider.gameObject.transform, hit.collider.gameObject.GetComponent<Renderer>().material);
-          hit.collider.gameObject.GetComponent<Renderer>().material = HiderMaterial;
+                    if (hit.collider.gameObject.GetComponent<Renderer>() != null)
+                    {
+                        _LastTransforms.Add(hit.collider.gameObject.transform, hit.collider.gameObject.GetComponent<Renderer>().material);
+                        hit.collider.gameObject.GetComponent<Renderer>().material = HiderMaterial;
+                    }
         }
       }
     }

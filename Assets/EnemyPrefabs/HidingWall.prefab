@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8676359825111785055}
   - component: {fileID: 8074026490331692107}
   m_Layer: 9
-  m_Name: Wall (20)
+  m_Name: HidingWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

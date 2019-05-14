@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7505153903606830043
 Transform:
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49cf1b9e750cc164b9a222f20985dcfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  js: {fileID: 6056456443360991928}
+  JumpForce: 2000
 --- !u!82 &6056456443360991928
 AudioSource:
   m_ObjectHideFlags: 0
