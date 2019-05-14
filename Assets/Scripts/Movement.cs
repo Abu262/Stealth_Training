@@ -8,13 +8,19 @@ public class Movement : MonoBehaviour
     public Transform camPivot;
     float heading = 0;
     public Transform cam;
-    public float speed = 20f;
+    public float speed = 10f;
 
     private Vector3 offset; //c
-    public float turnSpeed = 4.0f; //c
+    public float turnSpeed = 2.0f; //c
     Vector2 input;
     Transform camTransform;
     Transform playerTransform;
+	
+	public float maxSprintSpeed = 20.0f;
+	//public float accel = 1.0f;
+	//sneak at a slow speed
+	public float sneakSpeed = 3.0f;
+	
     void Awake()
     {
         camTransform = cam.GetComponent<Transform>();
@@ -30,11 +36,11 @@ public class Movement : MonoBehaviour
 
     void Update()//FixedUpdate
     {
-        if(Input.GetKey(KeyCode.Q))
+        if(Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftArrow))
         {
             offset = Quaternion.AngleAxis(-0.5f * turnSpeed, Vector3.up) * offset; //c
         }
-        if(Input.GetKey(KeyCode.E))
+        if(Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.RightArrow))
         {
             offset = Quaternion.AngleAxis(0.5f * turnSpeed, Vector3.up) * offset; //c
         }
@@ -52,8 +58,14 @@ public class Movement : MonoBehaviour
         camR.y = 0;
         camF = camF.normalized;
         camR = camR.normalized;
-        rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * speed);// 5);
-        camTransform.position = playerTransform.position + offset; //c
+		if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) {
+			rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * maxSprintSpeed);
+		} else if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl)) {
+			rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * sneakSpeed);
+		} else {
+			rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * speed);// 5);
+        }
+		camTransform.position = playerTransform.position + offset; //c
         camTransform.LookAt(playerTransform.position);//c
         //transform.position += (camF * input.y + camR * input.x) * Time.deltaTime * 5;
         // cam.position = (Quaternion.Euler(30, 45, 0) * Vector3.forward);
