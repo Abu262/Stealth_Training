@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     public Transform camPivot;
     float heading = 0;
     public Transform cam;
+    public float speed = 20f;
 
     private Vector3 offset; //c
     public float turnSpeed = 4.0f; //c
@@ -51,7 +52,7 @@ public class Movement : MonoBehaviour
         camR.y = 0;
         camF = camF.normalized;
         camR = camR.normalized;
-        rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * 20);// 5);
+        rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * speed);// 5);
         camTransform.position = playerTransform.position + offset; //c
         camTransform.LookAt(playerTransform.position);//c
         //transform.position += (camF * input.y + camR * input.x) * Time.deltaTime * 5;
@@ -63,6 +64,6 @@ public class Movement : MonoBehaviour
         //if (rb.velocity.y < -0.1)
         //    print("Game Over");
     }
-
+    
 
 }

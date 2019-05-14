@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JumpPad : MonoBehaviour
 {
-    public AudioSource js;
+    
     public float JumpForce = 2000f;
     void Start()
     {
@@ -24,7 +24,7 @@ public class JumpPad : MonoBehaviour
         //Debug.Log("Entered");
         if (col.gameObject.tag == "Player")
         {
-            js.Play();
+            AudioManager.instance.Play("PlayerJump");
             col.GetComponent<Rigidbody>().AddForce(0, JumpForce, 0);
         }
 

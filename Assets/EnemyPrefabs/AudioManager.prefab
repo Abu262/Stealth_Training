@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2148487571286848328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2148487571286848330}
+  - component: {fileID: 2148487571286848331}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2148487571286848330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2148487571286848328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2148487571286848331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2148487571286848328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d912a18f37df364a97e0c32b239d5d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: PlayerCaught
+    clip: {fileID: 8300000, guid: 3dc4483f91859024ebb1442edc875609, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Alarm
+    clip: {fileID: 8300000, guid: de112202d4a1e7e4a9f79cb1f452ba89, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: NewLevel
+    clip: {fileID: 8300000, guid: d69370e9060899246970cf11205a1cdb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerJump
+    clip: {fileID: 8300000, guid: 012b4129a14bff446bd6050ed0ebfa8c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BassnSnaps
+    clip: {fileID: 8300000, guid: a10dc60a06d1acb488fa10c93f327abe, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BoopBopReverb
+    clip: {fileID: 8300000, guid: fb457a54b3a239349934fc0515cc4fa7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bu-op
+    clip: {fileID: 8300000, guid: bff77644c9f39eb4b936c5710f7399b8, type: 3}
+    volume: 0.12
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DarudeButNot
+    clip: {fileID: 8300000, guid: 2bf2ecab8011ecc49a96db4a16d06a23, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Echos_n_Boops
+    clip: {fileID: 8300000, guid: 98fc522594661e6419be0ed47dab5110, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EmoPiano
+    clip: {fileID: 8300000, guid: d8d51369bf0d13548a9840772f57c227, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: FreakyVoice
+    clip: {fileID: 8300000, guid: 8b2a097cea7478d45a080411de73edbd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: HeckyIntense
+    clip: {fileID: 8300000, guid: 89c86122a9fd77548bc629efac9c24fe, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: NiceKeyboard
+    clip: {fileID: 8300000, guid: 3037defd99f2a7d449d573eb18fbe415, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
