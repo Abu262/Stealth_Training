@@ -2397,7 +2397,7 @@ PrefabInstance:
     - target: {fileID: 1120503542464094256, guid: 1bb0d9708c72a024abf160289ed2e0bf,
         type: 3}
       propertyPath: speed
-      value: 20
+      value: 7.97
       objectReference: {fileID: 0}
     - target: {fileID: 1120503542464094271, guid: 1bb0d9708c72a024abf160289ed2e0bf,
         type: 3}
@@ -6287,7 +6287,7 @@ PrefabInstance:
     - target: {fileID: 5700184720667496140, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
         type: 3}
       propertyPath: OccluderMask.m_Bits
-      value: 8192
+      value: 8704
       objectReference: {fileID: 0}
     - target: {fileID: 5700184720667496140, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
         type: 3}
