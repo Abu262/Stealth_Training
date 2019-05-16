@@ -108,8 +108,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallEnemies:
   - {fileID: 0}
-  enemyToSpawn: {fileID: 415842311864090465, guid: 1129b0fdf15a6644596ef890fe4c4fe2,
+  enemyToSpawn: {fileID: 4865635123613404868, guid: a0a6a06e34750ba4aaaf03f80206f292,
     type: 3}
+  enemyInactiveMaterial: {fileID: 2100000, guid: 2cd8528ffe0874744a56122e57db058a,
+    type: 2}
+  enemyActiveMaterial: {fileID: 2100000, guid: 8344b6c2b5bafd34b95808e2fa09c867, type: 2}
+  childColoredObject: 1
   inactiveMaterial: {fileID: 2100000, guid: 198b91c8159bc51408a9cc8f5a19b6d4, type: 2}
   activeMaterial: {fileID: 2100000, guid: 1ea1a4470dd802d4fa969095b4e43b54, type: 2}
 --- !u!65 &4801068867088671836
