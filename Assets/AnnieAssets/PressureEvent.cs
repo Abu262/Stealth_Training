@@ -9,6 +9,9 @@ public class PressureEvent : MonoBehaviour
 	public List<GameObject> wallEnemies = new List<GameObject>();
 	private List<GameObject> transformedEnemies = new List<GameObject>();
 	public GameObject enemyToSpawn;
+	public Material enemyInactiveMaterial;
+	public Material enemyActiveMaterial;
+	public int childColoredObject = 1;
 	
 	public Material inactiveMaterial;
 	public Material activeMaterial;
@@ -16,6 +19,8 @@ public class PressureEvent : MonoBehaviour
 	
 	private bool enemiesConverted = false;
 	private bool enemiesMoving = false;
+	
+	private List<GameObject> centerCubeGlowies = new List<GameObject>();
 	
 	//private List<GameObject> colliderList = new List<GameObject>();
 	
@@ -42,6 +47,10 @@ public class PressureEvent : MonoBehaviour
 					GameObject newEnemy = Instantiate(enemyToSpawn, pos, rot) as GameObject;
 					newEnemy.GetComponent<NavMeshAgent>().Warp(pos);
 					transformedEnemies.Add(newEnemy);
+					//newEnemy.GetComponent<Renderer>().material = enemyActiveMaterial;
+					GameObject newEnemyColored = newEnemy.transform.GetChild(childColoredObject).gameObject;
+					centerCubeGlowies.Add(newEnemyColored);
+					newEnemyColored.GetComponent<Renderer>().material = enemyActiveMaterial;
 					newEnemy.SetActive(true);
 				}
 			}
@@ -49,7 +58,8 @@ public class PressureEvent : MonoBehaviour
 			if(enemiesConverted && !enemiesMoving) {
 				for(int i = 0; i < wallEnemies.Count; i++) {
 					//transformedEnemies[i].GetComponent<FollowPlayer>().enabled = true;
-					transformedEnemies[i].GetComponent<FollowPlayer>().StartChasing();					
+					transformedEnemies[i].GetComponent<FollowPlayer>().StartChasing();	
+					centerCubeGlowies[i].GetComponent<Renderer>().material = enemyActiveMaterial;
 				}
 			}
 			enemiesConverted = true;	
@@ -70,7 +80,8 @@ public class PressureEvent : MonoBehaviour
 			GetComponent<Renderer>().material = inactiveMaterial;	
 			if(enemiesConverted && enemiesMoving) {
 				for(int i = 0; i < transformedEnemies.Count; i++) {
-					Debug.Log(i);
+					//Debug.Log(i);
+					centerCubeGlowies[i].GetComponent<Renderer>().material = enemyInactiveMaterial;
 					transformedEnemies[i].GetComponent<FollowPlayer>().StopChasing();
 					//transformedEnemies[i].GetComponent<FollowPlayer>().enabled = false;					
 				}
