@@ -13,6 +13,8 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        Application.targetFrameRate = 30;
+        QualitySettings.vSyncCount = 0;
         if (instance == null)
             instance = this;
         else

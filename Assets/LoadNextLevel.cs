@@ -26,7 +26,10 @@ public class LoadNextLevel : MonoBehaviour
         if (other.name == "Player")
         {
             //The scene number to load (in File->Build Settings)
-            AudioManager.instance.Play("NewLevel");
+            if (GameObject.Find("AudioManager") != null)
+            {
+                AudioManager.instance.Play("NewLevel");
+            }
             SceneManager.LoadScene(0);
         }
 

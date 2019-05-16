@@ -53,17 +53,15 @@ public class Movement : MonoBehaviour
         
         Vector3 camF = cam.forward;
         Vector3 camR = cam.right;
-
         camF.y = 0;
         camR.y = 0;
         camF = camF.normalized;
         camR = camR.normalized;
-		if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) {
-			rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * maxSprintSpeed);
-		} else if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl)) {
-			rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * sneakSpeed);
+		if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl)) {
+            snek(camF, camR);
 		} else {
-			rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * speed);// 5);
+            walk(camF, camR);
+
         }
 		camTransform.position = playerTransform.position + offset; //c
         camTransform.LookAt(playerTransform.position);//c
@@ -76,6 +74,23 @@ public class Movement : MonoBehaviour
         //if (rb.velocity.y < -0.1)
         //    print("Game Over");
     }
-    
 
+    void FixedUpdate()
+    {
+        
+    }
+
+    void sprint(Vector3 camF, Vector3 camR)
+    {
+
+//        rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * maxSprintSpeed);
+    }
+    void walk(Vector3 camF, Vector3 camR)
+    {
+        rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * speed);// 5);
+    }
+    void snek(Vector3 camF, Vector3 camR)
+    {
+        rb.MovePosition(playerTransform.position + (camF * input.y + camR * input.x) * Time.deltaTime * sneakSpeed);
+    }
 }
