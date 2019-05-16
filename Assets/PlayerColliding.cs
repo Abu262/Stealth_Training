@@ -31,8 +31,11 @@ public class PlayerColliding : MonoBehaviour
         var lerp = Mathf.PingPong(Time.time, 5) / 5;
         if (other.tag == "Player")
         {
-            AudioManager.instance.Play("Alarm");
-            PlayerAlarm = true;
+            if (GameObject.Find("AudioManager") != null)
+            {
+                AudioManager.instance.Play("Alarm");
+            }
+                PlayerAlarm = true;
             rend.material.Lerp(material1, material2, 1);
             // do shit
             PlayerTouching = true;
