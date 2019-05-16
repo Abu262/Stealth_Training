@@ -291,6 +291,11 @@ PrefabInstance:
       propertyPath: doesLoop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1611178926597589770, guid: 94dca468d209a4c4abdb7cb313030ce3,
+        type: 3}
+      propertyPath: angle
+      value: 89
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94dca468d209a4c4abdb7cb313030ce3, type: 3}
 --- !u!1001 &64991211
@@ -962,6 +967,11 @@ PrefabInstance:
         type: 3}
       propertyPath: slowness
       value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1611178926597589770, guid: 94dca468d209a4c4abdb7cb313030ce3,
+        type: 3}
+      propertyPath: angle
+      value: 89
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94dca468d209a4c4abdb7cb313030ce3, type: 3}
@@ -2397,14 +2407,30 @@ PrefabInstance:
     - target: {fileID: 1120503542464094256, guid: 1bb0d9708c72a024abf160289ed2e0bf,
         type: 3}
       propertyPath: speed
-      value: 7.97
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1120503542464094256, guid: 1bb0d9708c72a024abf160289ed2e0bf,
+        type: 3}
+      propertyPath: maxSprintSpeed
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1120503542464094271, guid: 1bb0d9708c72a024abf160289ed2e0bf,
         type: 3}
       propertyPath: m_Drag
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1120503542464094271, guid: 1bb0d9708c72a024abf160289ed2e0bf,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1120503542464094271, guid: 1bb0d9708c72a024abf160289ed2e0bf,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7713426583997810121, guid: 1bb0d9708c72a024abf160289ed2e0bf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1bb0d9708c72a024abf160289ed2e0bf, type: 3}
 --- !u!1001 &704397784
 PrefabInstance:
@@ -2709,6 +2735,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1611178926597589770, guid: 94dca468d209a4c4abdb7cb313030ce3,
+        type: 3}
+      propertyPath: angle
+      value: 89
       objectReference: {fileID: 0}
     - target: {fileID: 3878641126288186482, guid: 94dca468d209a4c4abdb7cb313030ce3,
         type: 3}
@@ -6293,6 +6324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494706, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: far clip plane
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38eb3ea9c8da1ac439d48de9ef08757f, type: 3}

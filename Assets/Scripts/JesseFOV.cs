@@ -64,7 +64,10 @@ public class JesseFOV : MonoBehaviour
                     // plonkreverb.Play();
                     AudioManager.instance.sounds[1].source.volume = 0f;
                     AudioManager.instance.sounds[1].loop = false;
-                    AudioManager.instance.Play("PlayerCaught");
+                    if (GameObject.Find("AudioManager") != null)
+                    {
+                        AudioManager.instance.Play("PlayerCaught");
+                    }
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                     visibleTargets.Add(target);
                 }

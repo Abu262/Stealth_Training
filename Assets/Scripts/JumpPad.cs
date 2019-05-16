@@ -24,7 +24,10 @@ public class JumpPad : MonoBehaviour
         //Debug.Log("Entered");
         if (col.gameObject.tag == "Player")
         {
-            AudioManager.instance.Play("PlayerJump");
+            if (GameObject.Find("AudioManager") != null)
+            {
+                AudioManager.instance.Play("PlayerJump");
+            }
             col.GetComponent<Rigidbody>().AddForce(0, JumpForce, 0);
         }
 
