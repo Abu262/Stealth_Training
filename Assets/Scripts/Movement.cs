@@ -36,11 +36,11 @@ public class Movement : MonoBehaviour
 
     void Update()//FixedUpdate
     {
-        if(Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftArrow))
+        if(Input.GetKey(KeyCode.Q) || Input.GetKey(","))
         {
             offset = Quaternion.AngleAxis(-0.5f * turnSpeed, Vector3.up) * offset; //c
         }
-        if(Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.RightArrow))
+        if(Input.GetKey(KeyCode.E) || Input.GetKey("."))
         {
             offset = Quaternion.AngleAxis(0.5f * turnSpeed, Vector3.up) * offset; //c
         }

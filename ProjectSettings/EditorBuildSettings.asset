@@ -6,9 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/JesseScene.unity
-    guid: 09fd9e8291dd1f7408f0559cf5ad394c
+    path: Assets/Scenes/BasicBoys.unity
+    guid: 6356e46308de6d445b8433952f516808
+  - enabled: 1
+    path: Assets/Scenes/LockerRoom.unity
+    guid: ad3aaa238f4fa124697c0a8e7cb52a64
+  - enabled: 1
+    path: Assets/Scenes/Bridges.unity
+    guid: 5b3fb035eedee9743a826bd6469d57d5
+  - enabled: 1
+    path: Assets/Scenes/HowManyenemiesScene.unity
+    guid: bb73dd5119c639647a0d2f2424404e18
   - enabled: 1
     path: Assets/Scenes/ShadowMooses.unity
     guid: de1f42434e298b74a9190b971203d6d6
+  - enabled: 1
+    path: Assets/Scenes/Louis Scenes/Lvl 2.unity
+    guid: f169dc894b5e9144a9acdc808ddf90d2
+  - enabled: 1
+    path: Assets/Scenes/GoingUp.unity
+    guid: 3d52be3f644519b49a6ffad027fa4e98
   m_configObjects: {}
