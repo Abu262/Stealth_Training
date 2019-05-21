@@ -27,6 +27,7 @@ public class PressureEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -59,6 +60,7 @@ public class PressureEvent : MonoBehaviour
 				for(int i = 0; i < wallEnemies.Count; i++) {
 					//transformedEnemies[i].GetComponent<FollowPlayer>().enabled = true;
 					transformedEnemies[i].GetComponent<FollowPlayer>().StartChasing();	
+					transformedEnemies[i].GetComponent<EnemyHitPlayer>().enabled = true;
 					centerCubeGlowies[i].GetComponent<Renderer>().material = enemyActiveMaterial;
 				}
 			}
@@ -83,6 +85,7 @@ public class PressureEvent : MonoBehaviour
 					//Debug.Log(i);
 					centerCubeGlowies[i].GetComponent<Renderer>().material = enemyInactiveMaterial;
 					transformedEnemies[i].GetComponent<FollowPlayer>().StopChasing();
+					transformedEnemies[i].GetComponent<EnemyHitPlayer>().enabled = false;
 					//transformedEnemies[i].GetComponent<FollowPlayer>().enabled = false;					
 				}
 				enemiesMoving = false;
