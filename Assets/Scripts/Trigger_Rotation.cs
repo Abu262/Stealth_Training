@@ -12,6 +12,7 @@ public class Trigger_Rotation : MonoBehaviour
 
 	[SerializeField] private bool doesLoop = false;
 	[SerializeField] private bool clockwise = true;
+	private bool hasBeenPressed = false;
 
 	//public Rotation target_obj = null;
 	public GameObject target = null;
@@ -27,13 +28,15 @@ public class Trigger_Rotation : MonoBehaviour
 	void OnTriggerEnter(Collider other)
 	{
 		
-		//print("OnTriggerEnter");
-		if (target != null)
+		if(!hasBeenPressed)
 		{
-			//print("!null");
-			StartCoroutine(target_script.RotateObject(angle, Vector3.up, slowness,delay, turns, doesLoop,clockwise));
-			//print("outside");
+			hasBeenPressed = true;
+			if (target != null)
+			{
+				StartCoroutine(target_script.RotateObject(angle, Vector3.up, slowness, delay, turns, doesLoop, clockwise));
+			}
 		}
+		
 	}
 
 
