@@ -14,10 +14,11 @@ public class GreenMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PC = new PlayerColliding[LoudFloor.Length];
         agent = GetComponent<NavMeshAgent>();
 
 		for(int i=0; i<LoudFloor.Length; i++)
-		{
+		{Debug.Log(i);
 			PC[i] = LoudFloor[i].GetComponent<PlayerColliding>();
 		}
         //PC = LoudFloor.GetComponent <PlayerColliding>();
@@ -29,6 +30,7 @@ public class GreenMovement : MonoBehaviour
     {
 		for(int i=0;i<PC.Length;i++)
 		{
+         
 			if (PC[i].PlayerTouching == true)
 			{
 				Debug.Log("walking");
