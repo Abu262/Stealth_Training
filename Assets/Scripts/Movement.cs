@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public float x = -26f;
+    public float y = 25f;
+    public float z = -33f;
     private Rigidbody rb;
     public Transform camPivot;
     float heading = 0;
@@ -31,12 +34,13 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        offset = new Vector3(playerTransform.position.x - 26.0f, playerTransform.position.y + 25.0f, playerTransform.position.z - 33.0f); //c
+        offset = new Vector3(playerTransform.position.x + x, playerTransform.position.y + y, playerTransform.position.z + z); //c
+
     }
 
     void Update()//FixedUpdate
     {
-        if(Input.GetKey(KeyCode.Q) || Input.GetKey(","))
+       /* if(Input.GetKey(KeyCode.Q) || Input.GetKey(","))
         {
             offset = Quaternion.AngleAxis(-0.5f * turnSpeed, Vector3.up) * offset; //c
         }
@@ -63,8 +67,13 @@ public class Movement : MonoBehaviour
             walk(camF, camR);
 
         }
-		camTransform.position = playerTransform.position + offset; //c
+		camTransform.position = new Vector3(playerTransform.position.x + x,playerTransform.position.y + y,playerTransform.position.z +z); //c
+  
         camTransform.LookAt(playerTransform.position);//c
+        camTransform.eulerAngles = new Vector3(60,
+0,
+0
+);
         //transform.position += (camF * input.y + camR * input.x) * Time.deltaTime * 5;
         // cam.position = (Quaternion.Euler(30, 45, 0) * Vector3.forward);
 
