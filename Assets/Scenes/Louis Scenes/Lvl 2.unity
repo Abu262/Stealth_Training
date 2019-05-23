@@ -574,55 +574,15 @@ PrefabInstance:
       propertyPath: points.Array.data[13]
       value: 
       objectReference: {fileID: 677924916}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[0]
-      value: 
-      objectReference: {fileID: 389538435}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[1]
-      value: 
-      objectReference: {fileID: 1416617964}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[2]
-      value: 
-      objectReference: {fileID: 1036291408}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[3]
-      value: 
-      objectReference: {fileID: 677924916}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8078472028836989550, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: viewRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8078472028836989550, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: viewAngle
-      value: 120
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8078472028836989550, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
@@ -2571,46 +2531,6 @@ PrefabInstance:
       propertyPath: points.Array.data[13]
       value: 
       objectReference: {fileID: 677924916}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[0]
-      value: 
-      objectReference: {fileID: 389538435}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[1]
-      value: 
-      objectReference: {fileID: 1416617964}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[2]
-      value: 
-      objectReference: {fileID: 1036291408}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[3]
-      value: 
-      objectReference: {fileID: 677924916}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8078472028836989550, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: viewRadius
@@ -4562,6 +4482,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 5633911098807022957, guid: a20a5d396d822214bafc0622815a3754,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a20a5d396d822214bafc0622815a3754, type: 3}
 --- !u!1 &1715369460
@@ -5937,46 +5862,6 @@ PrefabInstance:
       propertyPath: points.Array.data[13]
       value: 
       objectReference: {fileID: 677924916}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[0]
-      value: 
-      objectReference: {fileID: 389538435}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[1]
-      value: 
-      objectReference: {fileID: 1416617964}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[2]
-      value: 
-      objectReference: {fileID: 1036291408}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[3]
-      value: 
-      objectReference: {fileID: 677924916}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8078472028836989550, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: viewRadius

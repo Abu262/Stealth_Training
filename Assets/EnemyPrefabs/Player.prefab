@@ -123,10 +123,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63088764d596aee498d206075341da1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 0
+  y: 20
+  z: -10
   camPivot: {fileID: 0}
   cam: {fileID: 0}
   speed: 5
-  turnSpeed: 3
+  turnSpeed: 5
   maxSprintSpeed: 20
   sneakSpeed: 3
 --- !u!114 &1120503542464094266
