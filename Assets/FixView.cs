@@ -28,10 +28,10 @@ public class FixView : MonoBehaviour
 
         RaycastHit[] hits = Physics.BoxCastAll(
             transform.position, 
-            new Vector3(1f, 1f, 1f), 
+            new Vector3(10f, 10f, 5f), 
             WatchTarget.transform.position - transform.position,
             new Quaternion(0,0,0,1),
-            Vector3.Distance(WatchTarget.transform.position, new Vector3(transform.position.x, transform.position.y, transform.position.z +3f)), 
+            Vector3.Distance(WatchTarget.transform.position, new Vector3(transform.position.x, transform.position.y, transform.position.z   )), 
             OccluderMask);
 //      transform.position,
   //    WatchTarget.transform.position - transform.position,
@@ -51,7 +51,7 @@ public class FixView : MonoBehaviour
       foreach(RaycastHit hit in hits){
         if(hit.collider.gameObject.transform != WatchTarget && hit.collider.transform.root != WatchTarget && Vector3.Distance(transform.position, hit.collider.transform.position) < Vector3.Distance(transform.position, WatchTarget.transform.position))
                 {
-                    if (hit.collider.gameObject.GetComponent<Renderer>() != null)
+                    if (hit.collider.gameObject.GetComponent<Renderer>() != null && hit.collider.gameObject.transform.position.y > WatchTarget.transform.position.y + 3f)
                     {
                         _LastTransforms.Add(hit.collider.gameObject.transform, hit.collider.gameObject.GetComponent<Renderer>().material);
                         hit.collider.gameObject.GetComponent<Renderer>().material = HiderMaterial;
