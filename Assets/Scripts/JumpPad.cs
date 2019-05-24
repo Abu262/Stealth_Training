@@ -6,18 +6,6 @@ public class JumpPad : MonoBehaviour
 {
     
     public float JumpForce = 2000f;
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
 
     void OnTriggerEnter(Collider col)
     {
