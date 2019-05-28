@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8676359825111785055}
   - component: {fileID: 8074026490331692107}
+  - component: {fileID: 885577914049055180}
   m_Layer: 9
   m_Name: HidingWall
   m_TagString: Untagged
@@ -48,6 +49,19 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!65 &885577914049055180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507079873642752719}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.0304534, z: 1}
+  m_Center: {x: 0, y: 0.010514617, z: 0}
 --- !u!1 &3505855576159324429
 GameObject:
   m_ObjectHideFlags: 0
