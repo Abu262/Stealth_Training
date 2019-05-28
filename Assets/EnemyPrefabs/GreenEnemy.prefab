@@ -869,6 +869,7 @@ GameObject:
   - component: {fileID: 6338275329444684145}
   - component: {fileID: 4034889636849647184}
   - component: {fileID: 6907433574438713118}
+  - component: {fileID: 8098070144968478596}
   m_Layer: 12
   m_Name: ViewVisualization
   m_TagString: Untagged
@@ -935,6 +936,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8098070144968478596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482255917339288596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85e5629af0211741b36bd63749e651d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hidden: {fileID: 2100000, guid: 51f544db2536bbc4ea35f4271468509d, type: 2}
+  NotHidden: {fileID: 2100000, guid: e2feaf7b118180d41bb7c6b6b566eb82, type: 2}
 --- !u!1 &6615882465351098848
 GameObject:
   m_ObjectHideFlags: 0

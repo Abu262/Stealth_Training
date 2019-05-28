@@ -42,12 +42,14 @@ public class Movement : MonoBehaviour
     {
        /* if(Input.GetKey(KeyCode.Q) || Input.GetKey(","))
         {
-            offset = Quaternion.AngleAxis(-0.5f * turnSpeed, Vector3.up) * offset; //c
+            camTransform.Rotate(new Vector3(camTransform.eulerAngles.x, camTransform.eulerAngles.y + 0.5f, camTransform.eulerAngles.z));
+   //         offset = Quaternion.AngleAxis(-0.5f * turnSpeed, Vector3.up) * offset; //c
         }
         if(Input.GetKey(KeyCode.E) || Input.GetKey("."))
         {
-            offset = Quaternion.AngleAxis(0.5f * turnSpeed, Vector3.up) * offset; //c
-        }
+            camTransform.Rotate(new Vector3(camTransform.eulerAngles.x, camTransform.eulerAngles.y - 0.5f, camTransform.eulerAngles.z));
+ //           offset = Quaternion.AngleAxis(0.5f * turnSpeed, Vector3.up) * offset; //c
+        }*/
         /*MOVE VIA MOUSE*/
         //heading += Input.GetAxis("Mouse X") * Time.deltaTime*45;
         //camPivot.rotation = Quaternion.Euler(0, heading, 0);

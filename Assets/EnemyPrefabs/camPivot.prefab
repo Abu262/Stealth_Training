@@ -112,7 +112,7 @@ MonoBehaviour:
   WatchTarget: {fileID: 0}
   OccluderMask:
     serializedVersion: 2
-    m_Bits: 8704
+    m_Bits: 10752
   HiderMaterial: {fileID: 2100000, guid: 51f544db2536bbc4ea35f4271468509d, type: 2}
 --- !u!1 &5700184720719551026
 GameObject:
