@@ -40,16 +40,19 @@ public class Movement : MonoBehaviour
 
     void Update()//FixedUpdate
     {
-       /* if(Input.GetKey(KeyCode.Q) || Input.GetKey(","))
+        if(Input.GetKey(KeyCode.Q) || Input.GetKey(","))
         {
-            camTransform.Rotate(new Vector3(camTransform.eulerAngles.x, camTransform.eulerAngles.y + 0.5f, camTransform.eulerAngles.z));
-   //         offset = Quaternion.AngleAxis(-0.5f * turnSpeed, Vector3.up) * offset; //c
+   //         camTransform.position = new Vector3(camTransform.position.x + 1, camTransform.position.y, camTransform.position.z);
+                //.Rotate(new Vector3(camTransform.eulerAngles.x, camTransform.eulerAngles.y + 0.5f, camTransform.eulerAngles.z));
+            offset = Quaternion.AngleAxis(-0.5f * turnSpeed, Vector3.up) * offset; //c
         }
         if(Input.GetKey(KeyCode.E) || Input.GetKey("."))
         {
-            camTransform.Rotate(new Vector3(camTransform.eulerAngles.x, camTransform.eulerAngles.y - 0.5f, camTransform.eulerAngles.z));
- //           offset = Quaternion.AngleAxis(0.5f * turnSpeed, Vector3.up) * offset; //c
-        }*/
+
+ //           camTransform.position = new Vector3(camTransform.position.x - 1, camTransform.position.y, camTransform.position.z);
+            //camTransform.Rotate(new Vector3(camTransform.eulerAngles.x, camTransform.eulerAngles.y - 0.5f, camTransform.eulerAngles.z));
+            offset = Quaternion.AngleAxis(0.5f * turnSpeed, Vector3.up) * offset; //c
+        }
         /*MOVE VIA MOUSE*/
         //heading += Input.GetAxis("Mouse X") * Time.deltaTime*45;
         //camPivot.rotation = Quaternion.Euler(0, heading, 0);
@@ -69,13 +72,15 @@ public class Movement : MonoBehaviour
             walk(camF, camR);
 
         }
-		camTransform.position = new Vector3(playerTransform.position.x + x,playerTransform.position.y + y,playerTransform.position.z +z); //c
-  
-        camTransform.LookAt(playerTransform.position);//c
-        camTransform.eulerAngles = new Vector3(60,
-0,
-0
-);
+//		camTransform.position = new Vector3(playerTransform.position.x + x,playerTransform.position.y + y,playerTransform.position.z +z); //c
+        //offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * turnSpeed, Vector3.up) * offset;
+        camTransform.position = transform.position + offset;
+        camTransform.LookAt(transform.position);
+        //camTransform.LookAt(playerTransform.position);//c
+       // camTransform.eulerAngles = new Vector3(60,
+//0,
+//0
+//);
         //transform.position += (camF * input.y + camR * input.x) * Time.deltaTime * 5;
         // cam.position = (Quaternion.Euler(30, 45, 0) * Vector3.forward);
 
