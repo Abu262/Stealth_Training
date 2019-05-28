@@ -7,31 +7,42 @@ public class GreenMovement : MonoBehaviour
     public Transform[] points;
     private int destPoint = 0;
     public GameObject player;
-    public GameObject LoudFloor;
-    PlayerColliding PC;
+    public GameObject[] LoudFloor;
+    PlayerColliding[] PC;
     private NavMeshAgent agent;
     //public GameObject waypoint;
     // Start is called before the first frame update
     void Start()
     {
+        PC = new PlayerColliding[LoudFloor.Length];
         agent = GetComponent<NavMeshAgent>();
-        PC = LoudFloor.GetComponent <PlayerColliding>();
+
+		for(int i=0; i<LoudFloor.Length; i++)
+		{Debug.Log(i);
+			PC[i] = LoudFloor[i].GetComponent<PlayerColliding>();
+		}
+        //PC = LoudFloor.GetComponent <PlayerColliding>();
         GotoNextPoint();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (PC.PlayerTouching == true)
-        {
-            Debug.Log("walking");
-            agent.destination = player.transform.position;
-        }
-        else
-        {
-            if (!agent.pathPending && agent.remainingDistance < 0.5f)
-                GotoNextPoint();
-        }
+		for(int i=0;i<PC.Length;i++)
+		{
+         
+			if (PC[i].PlayerTouching == true)
+			{
+				Debug.Log("walking");
+				agent.destination = player.transform.position;
+			}
+			else
+			{
+				if (!agent.pathPending && agent.remainingDistance < 0.5f)
+					GotoNextPoint();
+			}
+		}
+        
     }
 
     void GotoNextPoint()
