@@ -502,7 +502,7 @@ PrefabInstance:
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
@@ -513,17 +513,17 @@ PrefabInstance:
         type: 3}
       propertyPath: points.Array.data[1]
       value: 
-      objectReference: {fileID: 996405254}
+      objectReference: {fileID: 677924916}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[3]
       value: 
-      objectReference: {fileID: 677924916}
+      objectReference: {fileID: 1302787311}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[2]
       value: 
-      objectReference: {fileID: 1927741952}
+      objectReference: {fileID: 1445284957}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[4]
@@ -2046,36 +2046,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959197561}
   m_CullTransparentMesh: 0
---- !u!1 &996405253
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 996405254}
-  m_Layer: 0
-  m_Name: End (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &996405254
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 996405253}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.5, y: 6, z: 3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1980104725}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1001370551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,43 +2375,43 @@ PrefabInstance:
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.size
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[0]
       value: 
-      objectReference: {fileID: 677924916}
+      objectReference: {fileID: 1036291408}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[1]
       value: 
-      objectReference: {fileID: 1445284957}
+      objectReference: {fileID: 1416617964}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[3]
       value: 
-      objectReference: {fileID: 1445284957}
+      objectReference: {fileID: 677924916}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[2]
       value: 
-      objectReference: {fileID: 1036291408}
+      objectReference: {fileID: 389538435}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[4]
       value: 
-      objectReference: {fileID: 312392836}
+      objectReference: {fileID: 389538435}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[5]
       value: 
-      objectReference: {fileID: 1499594691}
+      objectReference: {fileID: 312392836}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[6]
       value: 
-      objectReference: {fileID: 389538435}
+      objectReference: {fileID: 1416617964}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[7]
@@ -2456,7 +2426,7 @@ PrefabInstance:
         type: 3}
       propertyPath: points.Array.data[9]
       value: 
-      objectReference: {fileID: 1445284957}
+      objectReference: {fileID: 1715369461}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[10]
@@ -2571,16 +2541,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8569653636186550047, guid: e1e520e59a6721e4e831911a88ed6edd,
-        type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 1757997178}
-    - target: {fileID: 8569653636186550047, guid: e1e520e59a6721e4e831911a88ed6edd,
-        type: 3}
-      propertyPath: camPivot
-      value: 
-      objectReference: {fileID: 183157653}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1e520e59a6721e4e831911a88ed6edd, type: 3}
 --- !u!4 &1068061667 stripped
@@ -3007,11 +2967,6 @@ PrefabInstance:
         type: 3}
       propertyPath: slowness
       value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1611178926597589770, guid: 94dca468d209a4c4abdb7cb313030ce3,
-        type: 3}
-      propertyPath: clockwise
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3878641126288186482, guid: 94dca468d209a4c4abdb7cb313030ce3,
         type: 3}
@@ -5647,7 +5602,6 @@ Transform:
   - {fileID: 1499594691}
   - {fileID: 677924916}
   - {fileID: 1927741952}
-  - {fileID: 996405254}
   m_Father: {fileID: 1251208345}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5821,7 +5775,7 @@ PrefabInstance:
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.size
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
@@ -5832,22 +5786,22 @@ PrefabInstance:
         type: 3}
       propertyPath: points.Array.data[1]
       value: 
-      objectReference: {fileID: 1499594691}
+      objectReference: {fileID: 677924916}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[3]
       value: 
-      objectReference: {fileID: 1715369461}
+      objectReference: {fileID: 1416617964}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[2]
       value: 
-      objectReference: {fileID: 312392836}
+      objectReference: {fileID: 1036291408}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[4]
       value: 
-      objectReference: {fileID: 1416617964}
+      objectReference: {fileID: 312392836}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[5]
@@ -5862,17 +5816,17 @@ PrefabInstance:
         type: 3}
       propertyPath: points.Array.data[7]
       value: 
-      objectReference: {fileID: 1445284957}
+      objectReference: {fileID: 312392836}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[8]
       value: 
-      objectReference: {fileID: 312392836}
+      objectReference: {fileID: 677924916}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[9]
       value: 
-      objectReference: {fileID: 1302787311}
+      objectReference: {fileID: 1499594691}
     - target: {fileID: 4960891910325621766, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: points.Array.data[10]
