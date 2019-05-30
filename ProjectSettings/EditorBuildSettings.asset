@@ -47,4 +47,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Louis Scenes/Lvl 2 Hard.unity
     guid: f169dc894b5e9144a9acdc808ddf90d2
+  - enabled: 1
+    path: Assets/Scenes/AnnieLvl1.unity
+    guid: 5a598741833497748af4f89e07a8c550
+  - enabled: 1
+    path: Assets/Scenes/TrickyTower.unity
+    guid: e5d3b18d86d7e5240b20812e0230983a
+  - enabled: 1
+    path: Assets/Scenes/EverythingIsAHallway.unity
+    guid: 9cf9b8d945ffa434d99d6a8154ef9b86
   m_configObjects: {}
