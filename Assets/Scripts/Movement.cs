@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -19,11 +20,12 @@ public class Movement : MonoBehaviour
     Transform camTransform;
     Transform playerTransform;
 	
+
 	public float maxSprintSpeed = 20.0f;
 	//public float accel = 1.0f;
 	//sneak at a slow speed
 	public float sneakSpeed = 3.0f;
-	
+    bool topdown = false;
     void Awake()
     {
         camTransform = cam.GetComponent<Transform>();
@@ -53,6 +55,36 @@ public class Movement : MonoBehaviour
             //camTransform.Rotate(new Vector3(camTransform.eulerAngles.x, camTransform.eulerAngles.y - 0.5f, camTransform.eulerAngles.z));
             offset = Quaternion.AngleAxis(0.5f * turnSpeed, Vector3.up) * offset; //c
         }
+
+        if(Input.GetKeyUp(KeyCode.R))
+        {
+            topdown = !topdown;
+        }
+        if(topdown)
+        {
+            if (offset.y < playerTransform.position.y + y + 30)
+            {
+                offset.y += 1f;
+            }
+            if (offset.y > playerTransform.position.y + y + 30)
+            {
+                offset.y = playerTransform.position.y + y + 30;
+            }
+            //           offset.y = playerTransform.position.y + y  + 120;// = new Vector3(offset.x, offset.y  +  5, offset.z);
+        }
+        else
+        {
+            if (offset.y > playerTransform.position.y + y)
+            {
+
+                offset.y -= 1f;
+            }
+            if  (offset.y < playerTransform.position.y + y)
+            {
+                offset.y = playerTransform.position.y + y;
+            }
+        }
+        
         /*MOVE VIA MOUSE*/
         //heading += Input.GetAxis("Mouse X") * Time.deltaTime*45;
         //camPivot.rotation = Quaternion.Euler(0, heading, 0);
@@ -84,7 +116,10 @@ public class Movement : MonoBehaviour
         //transform.position += (camF * input.y + camR * input.x) * Time.deltaTime * 5;
         // cam.position = (Quaternion.Euler(30, 45, 0) * Vector3.forward);
 
-        //if (transform.position.y < -1)
+        if (transform.position.y < -1)
+        {
+            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        }
         //print("Game Over");
 
         //if (rb.velocity.y < -0.1)

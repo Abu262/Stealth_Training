@@ -13,6 +13,8 @@ public class FixView : MonoBehaviour
 
   private Dictionary<Transform, Material> _LastTransforms;
 
+
+
   void Start () {
     _LastTransforms = new Dictionary<Transform, Material>();
   }

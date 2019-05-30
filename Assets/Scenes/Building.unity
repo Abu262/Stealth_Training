@@ -2370,6 +2370,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: camPivot
       objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 52.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5700184720719551027, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7340,6 +7360,16 @@ PrefabInstance:
       propertyPath: camPivot
       value: 
       objectReference: {fileID: 2140138202}
+    - target: {fileID: 8569653636186550047, guid: e1e520e59a6721e4e831911a88ed6edd,
+        type: 3}
+      propertyPath: y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569653636186550032, guid: e1e520e59a6721e4e831911a88ed6edd,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1e520e59a6721e4e831911a88ed6edd, type: 3}
 --- !u!1001 &1864945427
