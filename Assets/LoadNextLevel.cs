@@ -30,7 +30,7 @@ public class LoadNextLevel : MonoBehaviour
             {
                 AudioManager.instance.Play("NewLevel");
             }
-            SceneManager.LoadScene(SceneToLoad);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
     }
