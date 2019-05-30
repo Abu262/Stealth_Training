@@ -9,11 +9,11 @@ public class AudioManager : MonoBehaviour
     Sound bgm;
     public static AudioManager instance;
     float v;
-
+    int target = 30;
     // Start is called before the first frame update
     void Awake()
     {
-        Application.targetFrameRate = 30;
+        Application.targetFrameRate = target;
         QualitySettings.vSyncCount = 0;
         if (instance == null)
             instance = this;
@@ -38,6 +38,11 @@ public class AudioManager : MonoBehaviour
 
     void Update()
     {
+        if (Application.targetFrameRate != target)
+        {
+            Application.targetFrameRate = target;
+        }
+
       if (!bgm.source.isPlaying)
         {
             bgm = sounds[UnityEngine.Random.Range(4, 13)];

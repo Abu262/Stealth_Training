@@ -1205,6 +1205,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: camPivot (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 58.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5700184720719551027, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1213,7 +1233,7 @@ PrefabInstance:
     - target: {fileID: 5700184720719551027, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: 23.8
       objectReference: {fileID: 0}
     - target: {fileID: 5700184720719551027, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
         type: 3}
@@ -5312,36 +5332,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[0]
-      value: 
-      objectReference: {fileID: 2061588721}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[1]
-      value: 
-      objectReference: {fileID: 696465437}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[2]
-      value: 
-      objectReference: {fileID: 1591098023}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: wayPointList.Array.data[3]
-      value: 
-      objectReference: {fileID: 511942925}
-    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: m_AgentTypeID
@@ -5371,6 +5361,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Speed
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: wayPointList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: wayPointList.Array.data[0]
+      value: 
+      objectReference: {fileID: 2061588721}
+    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: wayPointList.Array.data[1]
+      value: 
+      objectReference: {fileID: 696465437}
+    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: wayPointList.Array.data[2]
+      value: 
+      objectReference: {fileID: 1591098023}
+    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: wayPointList.Array.data[3]
+      value: 
+      objectReference: {fileID: 511942925}
+    - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8078472028836989550, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
@@ -7240,6 +7260,11 @@ PrefabInstance:
       propertyPath: camPivot
       value: 
       objectReference: {fileID: 1181916993}
+    - target: {fileID: 8569653636186550047, guid: e1e520e59a6721e4e831911a88ed6edd,
+        type: 3}
+      propertyPath: y
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1e520e59a6721e4e831911a88ed6edd, type: 3}
 --- !u!1001 &902548455
@@ -7852,6 +7877,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_AgentTypeID
+      value: -1372625422
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_BaseOffset
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 720
+      objectReference: {fileID: 0}
     - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: wayPointList.Array.size
@@ -7886,26 +7931,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_AgentTypeID
-      value: -1372625422
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_Acceleration
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_BaseOffset
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_AngularSpeed
-      value: 720
       objectReference: {fileID: 0}
     - target: {fileID: 8078472028836989550, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}

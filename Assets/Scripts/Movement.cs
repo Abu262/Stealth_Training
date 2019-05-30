@@ -23,7 +23,7 @@ public class Movement : MonoBehaviour
 	//public float accel = 1.0f;
 	//sneak at a slow speed
 	public float sneakSpeed = 3.0f;
-	
+    bool topdown = false;
     void Awake()
     {
         camTransform = cam.GetComponent<Transform>();
@@ -53,6 +53,36 @@ public class Movement : MonoBehaviour
             //camTransform.Rotate(new Vector3(camTransform.eulerAngles.x, camTransform.eulerAngles.y - 0.5f, camTransform.eulerAngles.z));
             offset = Quaternion.AngleAxis(0.5f * turnSpeed, Vector3.up) * offset; //c
         }
+
+        if(Input.GetKeyUp(KeyCode.R))
+        {
+            topdown = !topdown;
+        }
+        if(topdown)
+        {
+            if (offset.y < playerTransform.position.y + y + 30)
+            {
+                offset.y += 1f;
+            }
+            if (offset.y > playerTransform.position.y + y + 30)
+            {
+                offset.y = playerTransform.position.y + y + 30;
+            }
+            //           offset.y = playerTransform.position.y + y  + 120;// = new Vector3(offset.x, offset.y  +  5, offset.z);
+        }
+        else
+        {
+            if (offset.y > playerTransform.position.y + y)
+            {
+
+                offset.y -= 1f;
+            }
+            if  (offset.y < playerTransform.position.y + y)
+            {
+                offset.y = playerTransform.position.y + y;
+            }
+        }
+        
         /*MOVE VIA MOUSE*/
         //heading += Input.GetAxis("Mouse X") * Time.deltaTime*45;
         //camPivot.rotation = Quaternion.Euler(0, heading, 0);
