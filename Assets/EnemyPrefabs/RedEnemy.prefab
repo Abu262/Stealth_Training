@@ -934,9 +934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viewRadius: 5
-  viewAngle: 30
-  Hidden: {fileID: 2100000, guid: 51f544db2536bbc4ea35f4271468509d, type: 2}
-  NotHidden: {fileID: 2100000, guid: ad400ccc3d72b4043b57eae306b57040, type: 2}
+  viewAngle: 40
   targetMask:
     serializedVersion: 2
     m_Bits: 1024
@@ -946,7 +944,7 @@ MonoBehaviour:
   visibleTargets: []
   meshResolution: 1
   edgeResolveIterations: 4
-  edgeDstThreshold: 2
+  edgeDstThreshold: 0.5
   viewMeshFilter: {fileID: 8937327437677010897}
 --- !u!114 &1326720515584540146
 MonoBehaviour:
@@ -1000,7 +998,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8424252151893486529}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.052745163, y: -0.18073297, z: -0.35884213}
+  m_LocalPosition: {x: -0.052745163, y: -0.18073297, z: 0.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6514818159333325028}
