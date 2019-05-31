@@ -116,7 +116,7 @@ public class Movement : MonoBehaviour
         //transform.position += (camF * input.y + camR * input.x) * Time.deltaTime * 5;
         // cam.position = (Quaternion.Euler(30, 45, 0) * Vector3.forward);
 
-        if (transform.position.y < -1)
+        if (transform.position.y < -5)
         {
             Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
         }
