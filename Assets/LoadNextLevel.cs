@@ -30,7 +30,16 @@ public class LoadNextLevel : MonoBehaviour
             {
                 AudioManager.instance.Play("NewLevel");
             }
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+            if (SceneManager.GetActiveScene().buildIndex == 16)
+            {
+                SceneManager.LoadScene(0);
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+
         }
 
     }
