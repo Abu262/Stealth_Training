@@ -2233,6 +2233,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_BaseOffset
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_Speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: wayPointList.Array.data[1]
@@ -2262,26 +2282,6 @@ PrefabInstance:
         type: 3}
       propertyPath: currentWayPoint
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_BaseOffset
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_AngularSpeed
-      value: 360
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8402011666849636988, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
@@ -4725,6 +4725,11 @@ PrefabInstance:
       propertyPath: camPivot
       value: 
       objectReference: {fileID: 2129507930}
+    - target: {fileID: 8569653636186550047, guid: e1e520e59a6721e4e831911a88ed6edd,
+        type: 3}
+      propertyPath: y
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1e520e59a6721e4e831911a88ed6edd, type: 3}
 --- !u!1 &1346896763
@@ -5673,6 +5678,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_BaseOffset
+      value: 4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_Speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5793780895220418087, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
       propertyPath: wayPointList.Array.data[0]
@@ -5697,26 +5722,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_BaseOffset
-      value: 4.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_AngularSpeed
-      value: 360
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364605371595274860, guid: 25af2deeb45a14145b89abdef62ec5f5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8402011666849636988, guid: 25af2deeb45a14145b89abdef62ec5f5,
         type: 3}
