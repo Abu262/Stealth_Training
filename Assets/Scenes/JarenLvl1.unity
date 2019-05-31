@@ -5508,6 +5508,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1441806669}
+    - target: {fileID: 8569653636186550047, guid: e1e520e59a6721e4e831911a88ed6edd,
+        type: 3}
+      propertyPath: y
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1e520e59a6721e4e831911a88ed6edd, type: 3}
 --- !u!1001 &487777755
@@ -11933,21 +11938,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1469424534142364332, guid: 9aeb195cf62af934280799e6db178726,
-        type: 3}
-      propertyPath: speed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1469424534142364332, guid: 9aeb195cf62af934280799e6db178726,
-        type: 3}
-      propertyPath: currentWayPoint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1469424534142364332, guid: 9aeb195cf62af934280799e6db178726,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
         type: 3}
       propertyPath: points.Array.size
@@ -11968,6 +11958,21 @@ PrefabInstance:
       propertyPath: LoudFloor.Array.data[0]
       value: 
       objectReference: {fileID: 1471438057}
+    - target: {fileID: 1469424534142364332, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1469424534142364332, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: currentWayPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1469424534142364332, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aeb195cf62af934280799e6db178726, type: 3}
 --- !u!4 &1154261326 stripped
@@ -23613,7 +23618,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 3778404bcc73d754bb798777e01a0b1f, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 5c8c5370382318d4582c71dd43977e88, type: 2}
 --- !u!4 &2033098033
 Transform:
   m_ObjectHideFlags: 0
