@@ -1,32 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
+	public void PlayGame()
 	{
 		int currentScene = SceneManager.GetActiveScene().buildIndex;
-		print(currentScene);
+
 
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
-	public void Mission()
+	public void LevelSelector(string name)
 	{
-		SceneManager.LoadScene("MissionMenu");
-	}
-	public void Controls()
-	{
-		SceneManager.LoadScene("ControlMenu");
-	}
-	public void Credits()
-	{
-		SceneManager.LoadScene("CreditsMenu");
+		 name = EventSystem.current.currentSelectedGameObject.name;
+		SceneManager.LoadScene(name);
 	}
 	public void Quit()
 	{
-		print("Application has quit");
+
 		Application.Quit();
 	}
 }

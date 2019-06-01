@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu/MissionMenu.unity
+    path: Assets/Scenes/_Menu/MainMenu.unity
     guid: ce26dbce90f35dd49bbac6a89ee5043b
   - enabled: 1
     path: Assets/Scenes/MeetTheReds.unity
@@ -39,13 +39,13 @@ EditorBuildSettings:
     path: Assets/Scenes/AnnieLvl2.unity
     guid: a8b483ac27acb30448786b87fb27f276
   - enabled: 1
-    path: Assets/Scenes/Louis Scenes/Lvl 3.unity
+    path: Assets/Scenes/Louis Scenes/LouisLvl3.unity
     guid: ec1687f9a9761a143970caa3d3b165f8
   - enabled: 1
     path: Assets/Scenes/JarenLvl1.unity
     guid: acf7eb5c8097dd6449ab35144cab3d7d
   - enabled: 1
-    path: Assets/Scenes/Louis Scenes/Lvl 2 Hard.unity
+    path: Assets/Scenes/Louis Scenes/LouisLvl2.unity
     guid: f169dc894b5e9144a9acdc808ddf90d2
   - enabled: 1
     path: Assets/Scenes/AnnieLvl1.unity
