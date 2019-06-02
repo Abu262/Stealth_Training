@@ -43,7 +43,7 @@ public class BlueEnemyMovementMod : MonoBehaviour
 		if (!otherWayRotation) {
 			transform.forward = Vector3.RotateTowards(transform.forward, targetWayPoint.position - transform.position, speed * Time.deltaTime, 0.0f);
 		} else {
-			transform.forward = Vector3.RotateTowards(transform.forward, targetWayPoint.position - transform.position, speed * Time.deltaTime, 0.0f);
+			transform.forward = Vector3.RotateTowards(transform.forward, targetWayPoint.position - transform.position + (new Vector3(0.001f, 0, 0)), speed * Time.deltaTime, 0.0f);
 		}
 		
 		transform.position = Vector3.MoveTowards(transform.position, targetWayPoint.position, speed * Time.deltaTime);
