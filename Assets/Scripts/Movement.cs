@@ -103,6 +103,11 @@ public class Movement : MonoBehaviour
 		} else {
             walk(camF, camR);
 
+        if (Input.GetKey(KeyCode.Escape))
+            {
+                SceneManager.LoadScene(0);
+            }
+
         }
 //		camTransform.position = new Vector3(playerTransform.position.x + x,playerTransform.position.y + y,playerTransform.position.z +z); //c
         //offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * turnSpeed, Vector3.up) * offset;
