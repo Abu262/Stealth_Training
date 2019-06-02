@@ -150,6 +150,8 @@ Transform:
   - {fileID: 1728562106}
   - {fileID: 1200702296}
   - {fileID: 1594437763}
+  - {fileID: 1349135583}
+  - {fileID: 85809203}
   - {fileID: 770877711}
   - {fileID: 2144091998}
   - {fileID: 496931917}
@@ -647,7 +649,7 @@ PrefabInstance:
     - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
         type: 3}
       propertyPath: LoudFloor.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
         type: 3}
@@ -684,6 +686,16 @@ PrefabInstance:
       propertyPath: LoudFloor.Array.data[4]
       value: 
       objectReference: {fileID: 1594437762}
+    - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: LoudFloor.Array.data[5]
+      value: 
+      objectReference: {fileID: 1349135582}
+    - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: LoudFloor.Array.data[6]
+      value: 
+      objectReference: {fileID: 85809202}
     - target: {fileID: 2141165877, guid: 9aeb195cf62af934280799e6db178726, type: 3}
       propertyPath: m_Speed
       value: 5
@@ -994,6 +1006,113 @@ PrefabInstance:
       objectReference: {fileID: 183157653}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1e520e59a6721e4e831911a88ed6edd, type: 3}
+--- !u!1 &85809202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 85809203}
+  - component: {fileID: 85809207}
+  - component: {fileID: 85809206}
+  - component: {fileID: 85809205}
+  - component: {fileID: 85809204}
+  m_Layer: 0
+  m_Name: Active Floor (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &85809203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85809202}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4, y: 2.5, z: 12}
+  m_LocalScale: {x: 3, y: 0.099999994, z: 2}
+  m_Children: []
+  m_Father: {fileID: 8696743}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &85809204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85809202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced2fcde7d0b36e4eafe04d77d42063a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerTouching: 0
+  material1: {fileID: 2100000, guid: a29cf9a386138774aad259b4db268a01, type: 2}
+  material2: {fileID: 2100000, guid: ad400ccc3d72b4043b57eae306b57040, type: 2}
+--- !u!65 &85809205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85809202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &85809206
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85809202}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a29cf9a386138774aad259b4db268a01, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &85809207
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85809202}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &89690900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1194,7 +1313,7 @@ PrefabInstance:
     - target: {fileID: 890323516194728488, guid: c9411675b9117c34ea6763c6469a61ea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 890323516194728488, guid: c9411675b9117c34ea6763c6469a61ea,
         type: 3}
@@ -2342,7 +2461,7 @@ PrefabInstance:
     - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
         type: 3}
       propertyPath: LoudFloor.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
         type: 3}
@@ -2379,6 +2498,16 @@ PrefabInstance:
       propertyPath: LoudFloor.Array.data[4]
       value: 
       objectReference: {fileID: 1594437762}
+    - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: LoudFloor.Array.data[5]
+      value: 
+      objectReference: {fileID: 1349135582}
+    - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: LoudFloor.Array.data[6]
+      value: 
+      objectReference: {fileID: 85809202}
     - target: {fileID: 2141165877, guid: 9aeb195cf62af934280799e6db178726, type: 3}
       propertyPath: m_Speed
       value: 5
@@ -3428,7 +3557,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8696743}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &513595557
 PrefabInstance:
@@ -4080,7 +4209,7 @@ PrefabInstance:
     - target: {fileID: 6514818159333325028, guid: 94dca468d209a4c4abdb7cb313030ce3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6514818159333325028, guid: 94dca468d209a4c4abdb7cb313030ce3,
         type: 3}
@@ -5220,7 +5349,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8696743}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &782272810
 PrefabInstance:
@@ -6520,7 +6649,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8696743}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1037817265
 PrefabInstance:
@@ -7022,7 +7151,7 @@ PrefabInstance:
     - target: {fileID: 6514818159333325028, guid: 94dca468d209a4c4abdb7cb313030ce3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6514818159333325028, guid: 94dca468d209a4c4abdb7cb313030ce3,
         type: 3}
@@ -7356,7 +7485,7 @@ PrefabInstance:
     - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
         type: 3}
       propertyPath: LoudFloor.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
         type: 3}
@@ -7393,6 +7522,16 @@ PrefabInstance:
       propertyPath: LoudFloor.Array.data[4]
       value: 
       objectReference: {fileID: 1594437762}
+    - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: LoudFloor.Array.data[5]
+      value: 
+      objectReference: {fileID: 1349135582}
+    - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: LoudFloor.Array.data[6]
+      value: 
+      objectReference: {fileID: 85809202}
     - target: {fileID: 2141165877, guid: 9aeb195cf62af934280799e6db178726, type: 3}
       propertyPath: m_Speed
       value: 5
@@ -10140,6 +10279,113 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1348181725}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1349135582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1349135583}
+  - component: {fileID: 1349135587}
+  - component: {fileID: 1349135586}
+  - component: {fileID: 1349135585}
+  - component: {fileID: 1349135584}
+  m_Layer: 0
+  m_Name: Active Floor (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1349135583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349135582}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.5, y: 2.5, z: 9}
+  m_LocalScale: {x: 3, y: 0.099999994, z: 8}
+  m_Children: []
+  m_Father: {fileID: 8696743}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1349135584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349135582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced2fcde7d0b36e4eafe04d77d42063a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerTouching: 0
+  material1: {fileID: 2100000, guid: a29cf9a386138774aad259b4db268a01, type: 2}
+  material2: {fileID: 2100000, guid: ad400ccc3d72b4043b57eae306b57040, type: 2}
+--- !u!65 &1349135585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349135582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1349135586
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349135582}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a29cf9a386138774aad259b4db268a01, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1349135587
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349135582}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1354469494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11888,7 +12134,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8696743}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1561450360
 PrefabInstance:
@@ -13090,8 +13336,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728562105}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 2.5, z: 9}
-  m_LocalScale: {x: 8, y: 0.099999994, z: 8}
+  m_LocalPosition: {x: 1.5, y: 2.5, z: 9}
+  m_LocalScale: {x: 3, y: 0.099999994, z: 8}
   m_Children: []
   m_Father: {fileID: 8696743}
   m_RootOrder: 7
@@ -14721,7 +14967,7 @@ PrefabInstance:
     - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
         type: 3}
       propertyPath: LoudFloor.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
         type: 3}
@@ -14758,6 +15004,16 @@ PrefabInstance:
       propertyPath: LoudFloor.Array.data[4]
       value: 
       objectReference: {fileID: 1594437762}
+    - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: LoudFloor.Array.data[5]
+      value: 
+      objectReference: {fileID: 1349135582}
+    - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: LoudFloor.Array.data[6]
+      value: 
+      objectReference: {fileID: 85809202}
     - target: {fileID: 2141165877, guid: 9aeb195cf62af934280799e6db178726, type: 3}
       propertyPath: m_Speed
       value: 5
@@ -15139,7 +15395,7 @@ PrefabInstance:
     - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
         type: 3}
       propertyPath: LoudFloor.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
         type: 3}
@@ -15176,6 +15432,16 @@ PrefabInstance:
       propertyPath: LoudFloor.Array.data[4]
       value: 
       objectReference: {fileID: 1594437762}
+    - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: LoudFloor.Array.data[5]
+      value: 
+      objectReference: {fileID: 1349135582}
+    - target: {fileID: 6532136692665232962, guid: 9aeb195cf62af934280799e6db178726,
+        type: 3}
+      propertyPath: LoudFloor.Array.data[6]
+      value: 
+      objectReference: {fileID: 85809202}
     - target: {fileID: 2141165877, guid: 9aeb195cf62af934280799e6db178726, type: 3}
       propertyPath: m_Speed
       value: 5
@@ -15313,7 +15579,7 @@ PrefabInstance:
     - target: {fileID: 890323516194728488, guid: c9411675b9117c34ea6763c6469a61ea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 890323516194728488, guid: c9411675b9117c34ea6763c6469a61ea,
         type: 3}
@@ -16965,5 +17231,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8696743}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
