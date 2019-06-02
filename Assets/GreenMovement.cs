@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -28,20 +28,23 @@ public class GreenMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		for(int i=0;i<PC.Length;i++)
-		{
-         
-			if (PC[i].PlayerTouching == true)
-			{
-				Debug.Log("walking");
-				agent.destination = player.transform.position;
-			}
-			else
-			{
-				if (!agent.pathPending && agent.remainingDistance < 0.5f)
-					GotoNextPoint();
-			}
-		}
+        if (PC.Length != 0)
+        {
+            for (int i = 0; i < PC.Length; i++)
+            {
+
+                if (PC[i].PlayerTouching == true)
+                {
+                    Debug.Log("walking");
+                    agent.destination = player.transform.position;
+                }
+                else
+                {
+                    if (!agent.pathPending && agent.remainingDistance < 0.5f)
+                        GotoNextPoint();
+                }
+            }
+        }
         
     }
 

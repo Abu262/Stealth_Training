@@ -16,9 +16,12 @@ public class Teleporter : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.transform != justJumpedSubject)
+        {
+            AudioManager.instance.Play("PlayerJump");
             destination.JumpToMe(other.transform);
-    }
 
+        }
+    }
     void OnTriggerExit(Collider other)
     {
         if(other.transform == justJumpedSubject)
