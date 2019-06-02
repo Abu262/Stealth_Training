@@ -9,6 +9,7 @@ public class BlueEnemyMovementMod : MonoBehaviour
 
     public int currentWayPoint = 0;
     Transform targetWayPoint;
+	public bool otherWayRotation = false;
 
     public float speed = 2f;
 
@@ -39,7 +40,12 @@ public class BlueEnemyMovementMod : MonoBehaviour
         //Vector3 relativePos = targetWayPoint.position - transform.position;
         //transform.rotation = Quaternion.LookRotation(relativePos);
         // move towards the target
-		transform.forward = Vector3.RotateTowards(transform.forward, targetWayPoint.position - transform.position, speed * Time.deltaTime, 0.0f);
+		if (!otherWayRotation) {
+			transform.forward = Vector3.RotateTowards(transform.forward, targetWayPoint.position - transform.position, speed * Time.deltaTime, 0.0f);
+		} else {
+			transform.forward = Vector3.RotateTowards(transform.forward, targetWayPoint.position - transform.position + (new Vector3(0.001f, 0, 0)), speed * Time.deltaTime, 0.0f);
+		}
+		
 		transform.position = Vector3.MoveTowards(transform.position, targetWayPoint.position, speed * Time.deltaTime);
 
         if (transform.position == targetWayPoint.position)
