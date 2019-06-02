@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ShadowMooses.unity
     guid: de1f42434e298b74a9190b971203d6d6
   - enabled: 1
-    path: Assets/Scenes/AnnieLvl2.unity
+    path: Assets/Scenes/OnlyTwoEnemies.unity
     guid: a8b483ac27acb30448786b87fb27f276
   - enabled: 1
     path: Assets/Scenes/Louis Scenes/SquareonSquare.unity
@@ -54,7 +54,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LockerRoom.unity
     guid: ad3aaa238f4fa124697c0a8e7cb52a64
   - enabled: 1
-    path: Assets/Scenes/AnnieLvl1.unity
+    path: Assets/Scenes/Spiral.unity
     guid: 5a598741833497748af4f89e07a8c550
   - enabled: 1
     path: Assets/Scenes/TrickyTower.unity
