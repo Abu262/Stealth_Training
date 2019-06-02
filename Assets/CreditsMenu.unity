@@ -180,7 +180,7 @@ MonoBehaviour:
 
 
 
-    Santi'
+    Santiago Morales'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 71406741687fd0e42b25c0a4d003a966, type: 2}
   m_sharedMaterial: {fileID: 21576438995078392, guid: 71406741687fd0e42b25c0a4d003a966,
@@ -250,10 +250,10 @@ MonoBehaviour:
   m_margin: {x: 432.86996, y: 0, z: -532.16547, w: -62.725872}
   m_textInfo:
     textComponent: {fileID: 119592807}
-    characterCount: 25
+    characterCount: 36
     spriteCount: 0
-    spaceCount: 10
-    wordCount: 4
+    spaceCount: 11
+    wordCount: 5
     linkCount: 0
     lineCount: 10
     pageCount: 1
@@ -1230,51 +1230,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: camPivot
       objectReference: {fileID: 0}
-    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5700184720719551027, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1333,6 +1288,51 @@ PrefabInstance:
     - target: {fileID: 5700184720667496140, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700184720667494711, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5700184720667494706, guid: 38eb3ea9c8da1ac439d48de9ef08757f,
@@ -1419,12 +1419,11 @@ MonoBehaviour:
 
     Jesse Allas
 
-    Annie Xu
-
-    Santi
-
     Jaren Gerdes
 
+    Santiago Morales
+
+    Annie Xu
 
 '
   m_isRightToLeft: 0
@@ -1473,7 +1472,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 42
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1496,12 +1495,12 @@ MonoBehaviour:
   m_margin: {x: 566.0216, y: 11.896576, z: -663.30927, w: -78.20665}
   m_textInfo:
     textComponent: {fileID: 627350612}
-    characterCount: 43
+    characterCount: 53
     spriteCount: 0
     spaceCount: 10
-    wordCount: 8
+    wordCount: 9
     linkCount: 0
-    lineCount: 7
+    lineCount: 6
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0

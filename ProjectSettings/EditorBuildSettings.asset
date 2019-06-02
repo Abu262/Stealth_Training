@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EverythingIsAHallway.unity
     guid: 9cf9b8d945ffa434d99d6a8154ef9b86
+  - enabled: 1
+    path: Assets/CreditsMenu.unity
+    guid: f668bba4e2dc5bc4688aa5c7a5b0ecf7
   m_configObjects: {}
